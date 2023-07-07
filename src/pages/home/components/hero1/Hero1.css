@@ -1,0 +1,120 @@
+.hero__container {
+    max-width: unset;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.hero__container__div2-container {
+    min-width: 400px;
+    height: 100%;
+    display: flex;
+    align-self: flex-end;
+    position: relative;
+
+}
+
+.hero__container__div2-container::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+    width: 600px;
+    height: 400px;
+    background-color: #f7fafd;
+}
+
+.hero__container__div2-container p {
+    border-left: 2px solid black;
+}
+
+.hero__container__div2-innerContainer {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    animation-name: divSlideUp;
+    animation-duration: 0.8s;
+}
+
+
+
+.hero__container__div3-container {
+    min-width: 100%;
+    height: 100%;
+}
+
+.hero__container__div3-image {
+    height: 100%;
+    width: 100%;
+    display: block;
+    opacity: 1;
+    animation-name: zoomHeroImage;
+    animation-duration: 0.8s;
+}
+
+
+
+@keyframes zoomHeroImage {
+    from {
+        opacity: 0;
+        transform: translateX(50px) translateY(-50px) scale(0.5);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0) translateY(0);
+    }
+}
+
+@keyframes divSlideUp {
+    from {
+        opacity: 0;
+        transform: translateX(0) translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0) translateY(0);
+    }
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    .hero__container__div2-container {
+        min-width: 350px;
+    }
+
+
+}
+
+@media screen and (max-width: 992px) {
+    .hero__container__div2-container {
+        min-width: 350px;
+    }
+
+
+}
+
+@media screen and (max-width: 768px) {
+    .hero__container__div2-container {
+        min-width: 300px;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    .hero__container__div2-container {
+        display: none;
+    }
+
+}
+
+
+
+/* translateZ(200px) perspective(200px)
+translateZ(50px) perspective(200px) */
