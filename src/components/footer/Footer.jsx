@@ -15,11 +15,6 @@ import {
 } from "react-icons/tfi";
 
 
-
-
-
-
-
 const Footer = () => {
   return (
     <div className='footer'>
@@ -36,7 +31,7 @@ const Footer = () => {
           <h3>Contacto</h3>
           <a href="#">
             <TfiEmail className='icon-help' size={15} />
-            <span>email@billbill.com.ar</span>
+            <span>billbill@email.com.ar</span>
           </a>
           <a href="#">
             <TfiHeadphoneAlt className='icon-help' size={15} />
