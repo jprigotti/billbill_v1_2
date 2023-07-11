@@ -11,9 +11,9 @@ export const AppRouter = createBrowserRouter([
     },
 ]);
 
-export const routes = [
-    {
-        name: "Home",
-        to: "/",
-    }
-];
+// export const routes = [
+//     {
+//         name: "Home",
+//         to: "/",
+//     }
+// ];
