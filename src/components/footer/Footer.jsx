@@ -1,6 +1,6 @@
 import React from 'react'
 import "../../utils/global.css"
-import "./footer.css"
+import "../../../src/components/footer/Footer.css"
 import logo from './../../assets/billbill_logo_black_1.png';
 import {
   FaFacebook,
