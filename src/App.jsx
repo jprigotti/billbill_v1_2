@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import './App.css'
+import '../src/App.css'
 import RootProvider from "./core/providers/RootProvider";
 import { RouterProvider } from "react-router-dom";
 import { AppRouter } from "../src/core/router/AppRouter";

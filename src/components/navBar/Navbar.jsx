@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import billbillLogo from './../../assets/billbill_logo_png.png';
-import "./Navbar.css";
-import { menuItems } from "./menuItems";
+import "../../../src/components/navBar/navbar.css";
+import { menuItems } from "../../../src/components/navBar/menuItems.js";
 import { TfiLocationPin } from "react-icons/tfi";
 import { TfiHeadphoneAlt } from "react-icons/tfi";
 import "../../utils/global.css"

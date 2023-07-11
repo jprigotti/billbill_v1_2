@@ -1,5 +1,5 @@
 import React from 'react';
-import './Services.css';
+import '../services/Services.css';
 import CustomStyles from "../../../../utils/CustomStyles";
 import { servicesItems} from "./servicesItems"
 import { FaWifi, FaSnowflake, FaConciergeBell, FaUmbrellaBeach, FaLaptopHouse, FaThermometerFull, FaLock } from "react-icons/fa";
