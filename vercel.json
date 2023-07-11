@@ -1,22 +1,3 @@
 {
-    "version": 2,
-    "routes": [
-      { "src": "/(.*)", "dest": "/" }
-    ],
-    "rewrites": [
-      {
-        "source": "/(.+\\.js)",
-        "headers": {
-          "content-type": "application/javascript"
-        }
-      }
-    ],
-    "rewrites": [
-      {
-        "source": "/(.+\\.css)",
-        "headers": {
-          "content-type": "application/javascript"
-        }
-      }
-    ]
-  }
+  "rewrites": [{ "source": "/(.*)", "destination": "/" }]
+}
