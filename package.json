@@ -1,7 +1,7 @@
 {
   "name": "billbill_v1",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.3",
   "type": "module",
   "homepage": "https://jprigotti.github.io/billbill_v1_2",
   "scripts": {

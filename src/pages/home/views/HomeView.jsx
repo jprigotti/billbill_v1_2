@@ -12,8 +12,6 @@ const HomeView = () => {
             <Newsletter />
             <Testimonials />
             <Contact />
-
-            <SocialMedia />
             <Bacity />
             <Location />
         </div>
