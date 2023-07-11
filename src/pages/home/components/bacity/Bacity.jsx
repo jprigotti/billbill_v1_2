@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Bacity.css"
+import "../bacity/Bacity.css"
 import bacityImage from "../../../../assets/images/bacity1.jpg"
 import "../hero2/Hero2.css"
 

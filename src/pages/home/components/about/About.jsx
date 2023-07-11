@@ -1,5 +1,5 @@
 import React from 'react'
-import "./About.css"
+import "../about/About.css"
 import image1 from "../../../../assets/images/hostel_image_1.jpg"
 import CustomStyles from "../../../../utils/CustomStyles";
 import "../../../../utils/global.css"

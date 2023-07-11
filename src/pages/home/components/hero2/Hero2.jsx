@@ -1,6 +1,6 @@
 import React from 'react'
 import video_1 from "../../../../assets/videos/video_1.mp4"
-import './Hero2.css'
+import '../hero2/Hero2.css'
 
 
 const Hero2 = () => {

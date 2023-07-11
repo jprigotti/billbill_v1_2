@@ -1,6 +1,6 @@
 import React from 'react'
 import Footer from '../../components/footer/Footer'
-import "./GeneralLayout.css"
+import "../../../src/core/layouts/GeneralLayout.css"
 import Navbar from '../../components/navBar/Navbar'
 import "../../utils/global.css"
 
