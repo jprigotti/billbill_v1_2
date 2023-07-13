@@ -57,7 +57,7 @@ const Gallery = () => {
           }}>
             <img
               className=""
-              src={image.src} />
+              src={image.imageUrl} />
           </SwiperSlide>)
         })}
       </Swiper>
