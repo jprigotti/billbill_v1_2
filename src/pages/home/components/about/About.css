@@ -20,16 +20,6 @@ p {
 
 }
 
-h1 {
-    width: 100%;
-    text-align: center;
-    font-family: var(--poppins);
-    font-size: 3rem;
-    font-weight: 700;
-    color: var(--color5);
-    text-shadow: 2px 2px 3px var(--jungle-green);
-}
-
 .about-body {
     width: 100%;
     display: flex;

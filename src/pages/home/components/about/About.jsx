@@ -15,7 +15,7 @@ const About = () => {
 
         <div className="about-body">
           <div className="text-container">
-          <CustomStyles.title5 className='mb-1'>Bienvenidos!</CustomStyles.title5 >
+            <CustomStyles.title5 className='mb-1'>Bienvenidos!</CustomStyles.title5 >
             <div className="text">
               <p>{content[0].paragraph}</p>
             </div>
@@ -31,23 +31,9 @@ const About = () => {
               }}
             ></div>
           </div>
-
-
-          {/* {content.map((content, index) => {
-              return (<p key={index} className="mb-1"> {content.paragraph} </p>)
-            })} */}
         </div>
-        {/* <div className="image"
-          style={{
-            backgroundImage: `url(${image})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
-          }}>
-
-        </div> */}
-      </div>
-    </div >
+      </div >
+    </div>
   )
 }
 
