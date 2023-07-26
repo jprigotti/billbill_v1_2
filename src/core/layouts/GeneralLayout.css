@@ -6,6 +6,7 @@
 
 .outer-container {
   width: 100vw;
+  position: relative;
 }
 
 

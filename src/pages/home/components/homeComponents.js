@@ -9,5 +9,6 @@ export { default as Rooms} from "./rooms/Rooms";
 export { default as Services} from "./services/Services";
 export { default as SocialMedia} from "./socialMedia/SocialMedia";
 export { default as Testimonials} from "./testimonials/Testimonials";
+export { default as Testimonials2} from "./testimonials/Testimonials2";
 export { default as Newsletter} from "./newsletters/Newsletter";
 export { default as Bacity} from "./bacity/Bacity";
