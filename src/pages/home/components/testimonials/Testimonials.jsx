@@ -13,6 +13,7 @@ import './testimonials.css'
 const Testimonials = () => {
   return (
     <div className='carousel'>
+      <p>Testimonios</p>
       <Swiper
         spaceBetween={50}
         slidesPerView={4}
