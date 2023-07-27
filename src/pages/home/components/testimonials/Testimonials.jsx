@@ -8,7 +8,7 @@ import 'swiper/css/pagination';
 SwiperCore.use([Navigation, Pagination]);
 import CardTestimonial from './CardTestimonial';
 import testimonials from './people';
-import './testimonials.css'
+import './Testimonials.css'
 
 const Testimonials = () => {
   return (
