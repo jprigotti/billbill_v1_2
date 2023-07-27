@@ -1,0 +1,10 @@
+.whatsApp-icon {
+    border-radius: 50px;
+    height: 80px;
+    border: none;
+}
+
+.whatsApp-icon img {
+    width: 80px;
+    height: 80px;
+}

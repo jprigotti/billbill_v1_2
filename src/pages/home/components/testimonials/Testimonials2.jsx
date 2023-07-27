@@ -21,7 +21,7 @@ const Testimonials2 = () => {
         loop={true}
         grabCursor={true}
         centeredSlides={true}
-        spaceBetween={50}
+        spaceBetween={30}
         slidesPerView={3}
         coverflowEffect={{
           rotate: 50,
@@ -37,7 +37,7 @@ const Testimonials2 = () => {
           },
           768: {
             slidesPerView: 2,
-            spaceBetween: 0,
+            spaceBetween: 40,
           },
         }}
         navigation
