@@ -11,7 +11,7 @@ import "swiper/css/pagination";
 
 import CardTestimonial from "./CardTestimonial";
 import testimonials from "./people";
-import "./testimonials.css";
+import "./Testimonials.css";
 
 const Testimonials2 = () => {
   return (
@@ -21,13 +21,13 @@ const Testimonials2 = () => {
         loop={true}
         grabCursor={true}
         centeredSlides={true}
-        spaceBetween={50}
+        spaceBetween={30}
         slidesPerView={3}
         coverflowEffect={{
           rotate: 50,
           stretch: 0,
           depth: 100,
-          modifier: 1,
+          modifier: 7,
           slideShadows: true,
         }}
         breakpoints={{
