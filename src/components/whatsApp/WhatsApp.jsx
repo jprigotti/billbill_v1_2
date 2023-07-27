@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { FaWhatsapp } from "react-icons/fa";
 import "./WhatsApp.css";
+import whatsAppIcon from "../../assets/whats.png";
 
 const WhatsApp = () => {
   const abrirWhatsApp = () => {
@@ -17,13 +18,12 @@ const WhatsApp = () => {
   useEffect(() => {
     if (typeof window !== "undefined") {
       const handleMouseScroll = (event) => {
-        console.log("wheel es: ", event.deltaY);
-        console.log("scrollWhatsApp: ", scrollWhatsApp);
-        setScrollWhatsApp((prevScroll) => prevScroll + (event.deltaY/5));
-
-        setTimeout(function() {
-            setScrollWhatsApp((prevScroll) => prevScroll - (event.deltaY/5));
-          }, 400);
+        if (event.deltaY < 0) {
+          setScrollWhatsApp((prevScroll) => prevScroll + event.deltaY / 3);
+          setTimeout(function () {
+            setScrollWhatsApp((prevScroll) => prevScroll - event.deltaY / 3);
+          }, 2000);
+        }
       };
 
       window.addEventListener("wheel", handleMouseScroll);
@@ -40,12 +40,17 @@ const WhatsApp = () => {
         top: `calc(90% + ${scrollWhatsApp}px)`,
         // top: `50%`,
         // transform: `translateY(${scrollWhatsApp/2}%)`,
-        transition: "1s ease-in-out",
-        zIndex: '999',
-         }}
+        // transition: "1s ease-in-out",
+        transition: "2s cubic-bezier(.58,.22,.23,.75)",
+        zIndex: "999",
+      }}
     >
-      <button onClick={abrirWhatsApp}>
-        <FaWhatsapp size={50} color="green"/>
+      <button onClick={abrirWhatsApp} className="whatsApp-icon">
+        {/* <FaWhatsapp size={50} color="green"/> */}
+        <img src={whatsAppIcon} alt="WhatsApp-Icon" />
+        {/* <div className="whatsApp-icon">
+
+        </div> */}
       </button>
     </div>
   );

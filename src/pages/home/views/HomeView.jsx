@@ -6,8 +6,8 @@ const HomeView = () => {
         <div>
             <Hero2 />
             <About />
-            <Services />
             <Rooms />
+            <Services />
             <Gallery />
             <Newsletter />
             <Contact />
