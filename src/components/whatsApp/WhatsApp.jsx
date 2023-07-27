@@ -19,11 +19,11 @@ const WhatsApp = () => {
       const handleMouseScroll = (event) => {
         console.log("wheel es: ", event.deltaY);
         console.log("scrollWhatsApp: ", scrollWhatsApp);
-        setScrollWhatsApp((prevScroll) => prevScroll + (event.deltaY/5));
+        setScrollWhatsApp((prevScroll) => prevScroll + (event.deltaY/4));
 
         setTimeout(function() {
-            setScrollWhatsApp((prevScroll) => prevScroll - (event.deltaY/5));
-          }, 400);
+            setScrollWhatsApp((prevScroll) => prevScroll - (event.deltaY/4));
+          }, 1000);
       };
 
       window.addEventListener("wheel", handleMouseScroll);
@@ -36,11 +36,12 @@ const WhatsApp = () => {
     <div
       style={{
         position: "fixed",
-        right: "25px",
-        top: `calc(90% + ${scrollWhatsApp}px)`,
+        right: "50px",
+        top: `calc(85% + ${scrollWhatsApp}px)`,
         // top: `50%`,
         // transform: `translateY(${scrollWhatsApp/2}%)`,
-        transition: "1s ease-in-out",
+        // transition: "1s ease-in-out",
+        transition: "property duration cubic-bezier(0.5, 0, 0.6, 5)",
         zIndex: '999',
          }}
     >

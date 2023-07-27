@@ -27,7 +27,7 @@ const Testimonials2 = () => {
           rotate: 50,
           stretch: 0,
           depth: 100,
-          modifier: 1,
+          modifier: 7,
           slideShadows: true,
         }}
         breakpoints={{
@@ -37,7 +37,7 @@ const Testimonials2 = () => {
           },
           768: {
             slidesPerView: 2,
-            spaceBetween: 40,
+            spaceBetween: 0,
           },
         }}
         navigation
