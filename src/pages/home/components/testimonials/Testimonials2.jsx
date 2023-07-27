@@ -11,7 +11,7 @@ import "swiper/css/pagination";
 
 import CardTestimonial from "./CardTestimonial";
 import testimonials from "./people";
-import "./testimonials.css";
+import "./Testimonials.css";
 
 const Testimonials2 = () => {
   return (
