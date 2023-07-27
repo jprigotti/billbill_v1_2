@@ -1,13 +1,8 @@
 import React from "react";
-import { Pagination, EffectCoverflow } from "swiper";
+import { Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import "swiper/css/effect-coverflow";
-import "swiper/css/navigation";
 import "swiper/css/pagination";
-
-// SwiperCore.use([Navigation, Pagination]);
-// import { } from "swiper/modules";
 
 import CardRooms from "./CardRooms";
 import roomsList from "./roomsList";
@@ -17,42 +12,33 @@ const Rooms = () => {
   return (
     <div className="main-container rooms">
       <Swiper
-        effect={"coverflow"}
-        loop={true}
-        grabCursor={true}
-        centeredSlides={true}
-        spaceBetween={50}
+        // loop={false}
+        // grabCursor={true}
+        // centeredSlides={true}
+        spaceBetween={30}
         slidesPerView={3}
-        coverflowEffect={{
-          rotate: 50,
-          stretch: 0,
-          depth: 100,
-          modifier: 1,
-          slideShadows: true,
-        }}
         breakpoints={{
-          200: {
+          500: {
             slidesPerView: 1,
             spaceBetween: 20,
           },
-          768: {
-            slidesPerView: 2,
+          1024: {
+            slidesPerView: 3,
             spaceBetween: 40,
           },
         }}
-        navigation
+        modules={[Pagination]}
         pagination={{ clickable: true }}
-        modules={[EffectCoverflow, Pagination]}
         className="rooms-swiper"
       >
-        {roomsList.map((testimonial) => (
-          <SwiperSlide id={testimonial.id} className="rooms-swiperSlide">
+        {roomsList.map((room) => (
+          <SwiperSlide id={room.id} className="rooms-swiperSlide">
             <CardRooms
-              image={testimonial.image}
-              name={testimonial.name}
-              nationality={testimonial.nationality}
-              website={testimonial.website}
-              description={testimonial.description}
+              image={room.image}
+              title={room.title}
+              priceTag={room.priceTag}
+              price={room.price}
+              description={room.description}
             />
           </SwiperSlide>
         ))}

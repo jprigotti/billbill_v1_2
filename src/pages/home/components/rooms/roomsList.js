@@ -2,7 +2,7 @@ import img1 from "../../../../assets/images/hostel_image_1.jpg";
 import img2 from "../../../../assets/images/gallery_6.jpg";
 import img3 from "../../../../assets/images/gallery_9.jpg";
 
-const rooms = [
+const roomsList = [
   {
     id: 1,
     image: img1,
@@ -29,4 +29,4 @@ const rooms = [
   },
 ];
 
-export default rooms;
+export default roomsList;

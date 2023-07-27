@@ -1,26 +1,30 @@
 import React from "react";
 import "./Rooms.css";
+import CustomStyles from "../../../../utils/CustomStyles";
 
 const CardRooms = ({ id, image, title, priceTag, price, description }) => {
   return (
     <div className="rooms-card">
-      <div className="rooms-card-header">
-        <img src={image} alt="room image" />
-      </div>
+      <div
+        className="rooms-card-header"
+        style={{
+          backgroundImage: `url(${image})`,
+        }}
+      ></div>
       <div className="rooms-card-description">
         <div>
           <p>{description}</p>
         </div>
       </div>
-      <div className="testimonials-card-body">
+      <div className="rooms-card-body">
         <div>
           <p>{priceTag}</p>
           <p>{price}</p>
         </div>
       </div>
-      <div className="testimonials-card-footer">
+      <div className="rooms-card-footer">
         <p>
-          <button>Mas info</button>
+          <CustomStyles.buttonSend>Mas info</CustomStyles.buttonSend>
         </p>
       </div>
     </div>

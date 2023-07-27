@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { FaWhatsapp } from "react-icons/fa";
 import "./WhatsApp.css";
-import  whatsAppIcon  from "../../assets/whats.png";
+import whatsAppIcon from "../../assets/whats.png";
 
 const WhatsApp = () => {
   const abrirWhatsApp = () => {
@@ -22,7 +22,7 @@ const WhatsApp = () => {
           setScrollWhatsApp((prevScroll) => prevScroll + event.deltaY / 3);
           setTimeout(function () {
             setScrollWhatsApp((prevScroll) => prevScroll - event.deltaY / 3);
-          }, 1000);
+          }, 2000);
         }
       };
 
@@ -45,9 +45,12 @@ const WhatsApp = () => {
         zIndex: "999",
       }}
     >
-      <button onClick={abrirWhatsApp}>
-        {/* <FaWhatsapp size={50} color="green" /> */}
-        <img src={whatsAppIcon} style={{width: "50px"}} alt="whatsApp Icon" />
+      <button onClick={abrirWhatsApp} className="whatsApp-icon">
+        {/* <FaWhatsapp size={50} color="green"/> */}
+        <img src={whatsAppIcon} alt="WhatsApp-Icon" />
+        {/* <div className="whatsApp-icon">
+
+        </div> */}
       </button>
     </div>
   );
