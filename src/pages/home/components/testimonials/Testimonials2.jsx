@@ -21,13 +21,13 @@ const Testimonials2 = () => {
         loop={true}
         grabCursor={true}
         centeredSlides={true}
-        spaceBetween={50}
+        spaceBetween={30}
         slidesPerView={3}
         coverflowEffect={{
           rotate: 50,
           stretch: 0,
           depth: 100,
-          modifier: 1,
+          modifier: 7,
           slideShadows: true,
         }}
         breakpoints={{
