@@ -49,12 +49,20 @@ background-color: rgba(0, 0, 0, 0.7);
 .rooms-card-body {
     width: 100%;
     height: 150px;
-    background-color: var(--heavy-black);
-    color: aqua;
+    background-color: var(--color3);
+    color: var(--heavy-metal);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.rooms-card-body .price{
+  font-size: 1.6rem;
+  color: var(--heavy-metal)
+  }
 
 .rooms-card-footer {
     width: 100%;
-    background-color: var(--heavy-black);
+    background-color: var(--color4);
     pad: 1rem;
 }

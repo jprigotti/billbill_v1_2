@@ -38,7 +38,7 @@ const Gallery = () => {
 
 
   return (
-    <div className='main-container mt-5'>
+    <div className='main-container mt-5 mb-5'>
       <Swiper
         loop={true}
         pagination={false}

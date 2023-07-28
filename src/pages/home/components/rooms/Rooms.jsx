@@ -18,11 +18,15 @@ const Rooms = () => {
         spaceBetween={30}
         slidesPerView={3}
         breakpoints={{
-          500: {
+          200: {
             slidesPerView: 1,
             spaceBetween: 20,
           },
-          1024: {
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+          },
+          1240: {
             slidesPerView: 3,
             spaceBetween: 40,
           },
