@@ -19,7 +19,7 @@ const CardRooms = ({ id, image, title, priceTag, price, description }) => {
       <div className="rooms-card-body">
         <div>
           <p>{priceTag}</p>
-          <p>{price}</p>
+          <p className="price">{price}</p>
         </div>
       </div>
       <div className="rooms-card-footer">

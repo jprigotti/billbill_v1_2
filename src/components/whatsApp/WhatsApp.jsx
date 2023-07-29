@@ -36,13 +36,14 @@ const WhatsApp = () => {
     <div
       style={{
         position: "fixed",
-        right: "25px",
-        top: `calc(90% + ${scrollWhatsApp}px)`,
+        right: "40px",
+        top: `calc(85% + ${scrollWhatsApp}px)`,
         // top: `50%`,
         // transform: `translateY(${scrollWhatsApp/2}%)`,
         // transition: "1s ease-in-out",
         transition: "2s cubic-bezier(.58,.22,.23,.75)",
         zIndex: "999",
+        cursor: "pointer"
       }}
     >
       <button onClick={abrirWhatsApp} className="whatsApp-icon">

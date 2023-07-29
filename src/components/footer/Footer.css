@@ -38,7 +38,7 @@
 .footer .footer-container .footer-logo figure figcaption {
     font-family: var(--poppins);
     font-size: 15px;
-    color: var(--jungle-green);
+    color: var(--color8);
 }
 
 /* HELP */
@@ -47,7 +47,7 @@
 .footer .footer-container h3 {
     font-family: var(--poppins);
     font-weight: 50;
-    color: var(--jungle-green);
+    color: var(--color8);
     margin-bottom: 25px;
 }
 
@@ -73,7 +73,7 @@
 
 
 .footer .footer-container .footer-help a:hover {
-    color: var(--eucalyptus);
+    color: var(--color8);
 }
 
 .footer .footer-container .footer-help span {

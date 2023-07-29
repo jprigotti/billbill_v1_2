@@ -9,10 +9,7 @@ import "swiper/css/bundle";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-
 import { imageData } from './galleryImages';
-
-
 
 const Gallery = () => {
   const [slidesPerView, setSlidesPerView] = useState(3);
@@ -38,7 +35,7 @@ const Gallery = () => {
 
 
   return (
-    <div className='main-container mt-5'>
+    <div className='main-container mb-10'>
       <Swiper
         loop={true}
         pagination={false}

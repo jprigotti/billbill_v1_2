@@ -24,10 +24,10 @@ const Testimonials2 = () => {
         spaceBetween={30}
         slidesPerView={3}
         coverflowEffect={{
-          rotate: 50,
+          rotate: 20,
           stretch: 0,
           depth: 100,
-          modifier: 7,
+          modifier: 10,
           slideShadows: true,
         }}
         breakpoints={{
