@@ -20,13 +20,18 @@
     --lemon-grass: rgba(148, 149, 140, 1);
     --lunar-green: rgba(72, 76, 69, 1);
     --green-pea: rgba(26, 92, 92, 1);
-
+    --contrast: rgb(200, 30, 20);
 
     --color1: #fdf4b0;
     --color2: #a4dcb9;
     --color3: #5bcebf;
     --color4: #32b9be;
     --color5: #2e97b7;
+    --color6: rgba(86,34,139,.7);
+    --color7: rgba(204,0,116,.7);
+    --color8: #0ac4b4;
+    --color9: #f25621;
+
 
     --color-newsletter: #00e0ce;
 
@@ -113,7 +118,11 @@
 }
 
 .mt-5 {
-    margin-top: 4rem;
+    margin-top: 5rem;
+}
+
+.mt-10 {
+    margin-top: 10rem;
 }
 
 .mb-1 {
@@ -133,7 +142,11 @@
 }
 
 .mb-5 {
-    margin-bottom: 4rem;
+    margin-bottom: 5rem;
+}
+
+.mb-10 {
+    margin-bottom: 10rem;
 }
 
 .px-1 {

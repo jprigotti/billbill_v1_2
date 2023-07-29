@@ -7,10 +7,9 @@ import { content } from "./content"
 
 const About = () => {
   return (
-    <div className='about main-container'>
+    <div className='about main-container mb-5'>
       <div className="about-container">
         <div className="about-header">
-          {/* <h1 className='mb-1'>Bienvenidos!</h1> */}
         </div>
 
         <div className="about-body">

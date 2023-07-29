@@ -20,8 +20,8 @@ const iconMapping = {
 
 const Services = () => {
   return (
-    <div className='services'>
-      <div className="services-container">
+    <div className='services mb-10'>
+      <div className="main-container services-container">
         <div className="services-header">
           <CustomStyles.title1 className='mb-2'>Servicios</CustomStyles.title1>
         </div>

@@ -3,11 +3,7 @@ p {
     font-size: 1rem;
 }
 
-.contact {
-    /* border: 1px solid black; */
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-}
+.contact {}
 
 .contact-container {
     width: 100%;
@@ -23,24 +19,37 @@ p {
     /* background-color: aqua; */
 }
 
-.contact-info-body{
+.contact-info-body {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
 }
 
-.contact-info-body p{
+.contact-info-body p {
     font-family: var(--indieFlower);
     font-size: 1.2rem;
 }
 
-
-
 .contact-form {
-    width: 50%;
-    background-color: var(--eucalyptus);
-    padding: 1rem;
-    border-radius: 10px;
+  position: relative; /* Add this to make ::before position correctly */
+  width: 50%;
+  /* background-color: var(--eucalyptus); */
+  background: linear-gradient(135deg, rgba(86, 34, 139, .7), rgba(204, 0, 116, .7));
+  padding: 1rem;
+  border-radius: 10px;
+  z-index: 1; /* Add this to ensure the form is above the ::before element */
+}
+
+.contact-form::before {
+  content: "";
+  position: absolute;
+  left: 0; /* Stretch the ::before element horizontally */
+  right: 0;
+  background: linear-gradient(90deg, rgba(86, 34, 139, .7) 10.67%, rgba(204, 0, 116, .7) 95.35%);
+  filter: blur(32px);
+  height: 10%;
+  bottom: -20px; /* Adjust the position based on your preference */
+  z-index: -1; /* Set a lower z-index to place it behind the form */
 }
 
 .form-item {
@@ -61,7 +70,7 @@ p {
 }
 
 .form-item input:focus {
-background-color: var(--gray-nurse);
+    background-color: var(--gray-nurse);
 }
 
 
@@ -91,7 +100,7 @@ background-color: var(--gray-nurse);
         width: 100%;
     }
 
-    .contact-info-body{
+    .contact-info-body {
         align-items: center;
     }
 
@@ -109,7 +118,7 @@ background-color: var(--gray-nurse);
         width: 100%;
     }
 
-    .contact-info-body{
+    .contact-info-body {
         align-items: center;
     }
 

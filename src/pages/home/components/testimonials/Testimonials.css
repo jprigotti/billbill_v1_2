@@ -1,18 +1,16 @@
 .testimonials-swiper {
-  /* height: 500px; */
-  padding: 30px 0;
+  
 }
 
 .testimonials-swiperSlide {
-  height: 90%;
+  border-radius: 1rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border: 1px solid #ccc;
-  background-color: rgba(255,255,255,0.9) !important;
+  background-color: rgba(255, 255, 255, 0.9) !important;
 }
 
 /* Estilos para la clase "card" */
 .testimonials-card {
-  border-radius: 10px;
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -35,9 +33,7 @@
 }
 
 .testimonials-card-body {
-  padding: 3rem 1rem ;
-
-
+  padding: 3rem 1rem;
 }
 
 .testimonials-card-body p {
@@ -50,26 +46,4 @@
   width: 100px;
   height: auto;
   border-radius: 100px;
-}
-
-
-
-/* Parallax*/
-
-.parallax-container {
-  height: 600px;
-  /* Adjust this height as needed */
-  overflow: hidden;
-  position: relative;
-  background-image: url("../../../../assets//images/bacity1.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.parallax-item {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  /* height: 100%; */
-
 }

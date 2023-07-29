@@ -4,8 +4,6 @@ import "./Contact.css"
 import CustomStyles from "../../../../utils/CustomStyles";
 import "../../../../utils/global.css"
 
-import image1 from "../../../../assets/images/hostel_image_1.jpg"
-
 
 const Contact = () => {
 
@@ -44,7 +42,7 @@ const Contact = () => {
 
 
   return (
-    <div className='contact main-container'>
+    <div className='contact main-container mb-10'>
       <div className="contact-container">
         <div className="contact-info">
           <div className="contact-info-body mb-1">

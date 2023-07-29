@@ -49,7 +49,7 @@ background-color: rgba(0, 0, 0, 0.7);
 .rooms-card-body {
     width: 100%;
     height: 150px;
-    background-color: var(--color3);
+    background-color: var(--gray-nurse);
     color: var(--heavy-metal);
     display: flex;
     justify-content: center;
@@ -63,6 +63,6 @@ background-color: rgba(0, 0, 0, 0.7);
 
 .rooms-card-footer {
     width: 100%;
-    background-color: var(--color4);
+    background-color: var(--lemon-grass);
     pad: 1rem;
 }

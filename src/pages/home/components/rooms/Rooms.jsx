@@ -10,7 +10,7 @@ import "./Rooms.css";
 
 const Rooms = () => {
   return (
-    <div className="main-container rooms">
+    <div className="main-container rooms mb-10">
       <Swiper
         // loop={false}
         // grabCursor={true}
