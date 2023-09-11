@@ -24,13 +24,6 @@ export const images16x9 = [
 export const images4x3 = [
     {
         imageURL: image4,
-    },
-
-    {
-        imageURL: image4,
-    },
-
-    {
-        imageURL: image4,
-    },
+        imageText: "Estamos en el corazón de San Telmo - Buenos Aires"
+    }
 ]
