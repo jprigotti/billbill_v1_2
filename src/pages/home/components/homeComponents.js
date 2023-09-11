@@ -4,6 +4,7 @@ export { default as Gallery} from "./gallery/Gallery";
 export { default as Hero} from "./hero/Hero";
 export { default as Hero1} from "./hero1/Hero1";
 export { default as Hero2} from "./hero2/Hero2";
+export { default as Hero3} from "./hero3/Hero3";
 export { default as Location} from "./location/Location";
 export { default as Rooms} from "./rooms/Rooms";
 export { default as Services} from "./services/Services";

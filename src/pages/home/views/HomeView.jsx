@@ -1,10 +1,10 @@
 import React from 'react'
-import { About, Contact, Gallery, Hero2, Hero1, Location, Rooms, Services1, SocialMedia, Testimonials, Testimonials2, Testimonials3, Newsletter, Bacity } from "../components/homeComponents"
+import { About, Contact, Gallery, Hero2, Hero3, Location, Rooms, Services1, SocialMedia, Testimonials, Testimonials2, Testimonials3, Newsletter, Bacity } from "../components/homeComponents"
 
 const HomeView = () => {
     return (
         <div>
-            <Hero2 />
+            <Hero3 />
             <About />
             <Rooms />
             <Services1 />
