@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Autoplay, EffectFade, Scrollbar, A11y } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "../../../../utils/global.css"
+import "./Hero3.css"
 
 // Import Swiper styles
 import "./Swiper.css";
@@ -34,7 +35,7 @@ const Hero3 = () => {
             <Swiper
                 loop={true}
                 autoplay={{
-                    delay: 2500,
+                    delay: 5000,
                     disableOnInteraction: false,
                 }}
                 effect={'fade'}
@@ -60,8 +61,9 @@ const Hero3 = () => {
                                 }}>
                                 <div className="pattern-overlay">
                                     <div className="hero-container">
-                                        <h2>Donde la <span style={{ textShadow: "2px 2px 6px var(--jungle-green)" }}>Aventura</span> se Encuentra con la Comodidad</h2>
-                                        <h1 className='mb-5'>Tu <span style={{ textShadow: "2px 2px 6px var(--jungle-green)" }}>Hogar</span> Lejos de Casa</h1>
+                                        <h2>{image.imageText}</h2>
+                                        {/* <h2>Donde la <span style={{ textShadow: "2px 2px 6px var(--jungle-green)" }}>Aventura</span> se Encuentra con la Comodidad</h2>
+                                        <h1 className='mb-5'>Tu <span style={{ textShadow: "2px 2px 6px var(--jungle-green)" }}>Hogar</span> Lejos de Casa</h1> */}
                                     </div>
                                 </div>
                             </div>

@@ -17,6 +17,9 @@ const About = () => {
             <CustomStyles.title5 className='mb-1'>Bienvenidos!</CustomStyles.title5 >
             <div className="text">
               <p>{content[0].paragraph}</p>
+              <p>{content[1].paragraph}</p>
+              <p>{content[2].paragraph}</p>
+              <p>{content[3].paragraph}</p>
             </div>
           </div>
 

@@ -7,14 +7,17 @@ import image4 from "../../../../assets/images/hero_selection/hostel_frente_4_3.j
 export const images16x9 = [
     {
         imageURL: image1,
+        imageText: "Estamos en el corazón de San Telmo - Buenos Aires"
     },
 
     {
         imageURL: image2,
+        imageText: "Viví una aventura inolvidable!"
     },
 
     {
         imageURL: image3,
+        imageText: "Nuestro hostel, tu hogar lejos de casa"
     }
 ]
 
