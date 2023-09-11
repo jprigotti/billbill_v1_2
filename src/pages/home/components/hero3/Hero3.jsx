@@ -6,18 +6,18 @@ import "../../../../utils/global.css"
 // Import Swiper styles
 import "./Swiper.css";
 import "swiper/css/bundle";
-import { images } from './heroImages';
+import { images16x9, images4x3 } from './heroImages';
 
 const Hero3 = () => {
 
-    const [imageType, setImageType] = useState("image16x9"); // This is just an example, initialize it as per your needs
+    const [images, setImages] = useState(images16x9); // This is just an example, initialize it as per your needs
 
     useEffect(() => {
         const handleResize = () => {
             if (window.innerWidth < 768) {
-                setImageType("image4x3");
+                setImages(images4x3);
             } else {
-                setImageType("image16x9");
+                setImages(images16x9);
             }
         };
 
@@ -28,7 +28,6 @@ const Hero3 = () => {
             window.removeEventListener('resize', handleResize);
         };
     }, []);
-
 
     return (
         <div className="hero mb-5">
@@ -53,7 +52,7 @@ const Hero3 = () => {
                             }}>
                             <div
                                 style={{
-                                    backgroundImage: `url(${image[imageType]})`,
+                                    backgroundImage: `url(${image.imageURL})`,
                                     backgroundSize: "cover",
                                     backgroundPosition: "center",
                                     backgroundRepeat: "no-repeat",
