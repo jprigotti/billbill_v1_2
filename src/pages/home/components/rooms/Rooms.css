@@ -1,9 +1,30 @@
-
 .rooms-swiper {
   padding: 30px 0;
 }
 
-.rooms-swiperSlide {
+.rooms-swiperSlide {}
+
+.rooms-container{
+
+
+}
+
+.rooms-header{
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.rooms-header p{
+  font-family: var(--indieFlower);
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.rooms.body{
+
 }
 
 /* Estilos para la clase "card" */
@@ -15,54 +36,53 @@
   position: relative;
 }
 
-.rooms-card:hover .rooms-card-description {
-transform: scale(1);
-visibility: visible;
-background-color: rgba(0, 0, 0, 0.7);
-}
-
-.rooms-card-header {
+.rooms-card-image {
   width: 100%;
   height: 400px;
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 
-.rooms-card-description {
+.rooms-card-body-content {
   position: absolute;
   width: 100%;
   height: 400px;
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.1);
-
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
   color: var(--gray-nurse);
   visibility: hidden;
   transform: scale(0.7);
-  transition: 0.2s ease-in;
+  transition: 0.3s ease-in;
 }
 
-.rooms-card-body {
-    width: 100%;
-    height: 150px;
-    background-color: var(--gray-nurse);
-    color: var(--heavy-metal);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.rooms-card:hover .rooms-card-body-content {
+  transform: scale(1);
+  visibility: visible;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
-.rooms-card-body .price{
+.rooms-card-body .price {
   font-size: 1.6rem;
   color: var(--heavy-metal)
-  }
+}
+
+.rooms-card-body-footer {
+  width: 100%;
+  /* background-color: var(--lemon-grass); */
+  pad: 1rem;
+}
 
 .rooms-card-footer {
-    width: 100%;
-    background-color: var(--lemon-grass);
-    pad: 1rem;
+  width: 100%;
+  height: 150px;
+  background-color: var(--gray-nurse);
+  color: var(--heavy-metal);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

@@ -1,17 +1,17 @@
 
 export const content = [
     {
-        paragraph: "¡Descubríi la auténtica experiencia de San Telmo en el Hostel Bill and Bill!",
+        paragraph: "¡Descubríi la auténtica experiencia de San Telmo en Bill and Bill Hostel!",
     },
     {
-        paragraph: "El Hostel Bill and Bill, ubicado en el corazón de San Telmo, es el lugar perfecto para comenzar tu viaje en la capital argentina.",
+        paragraph: "Nuestro Hostel está ubicado en el corazón de San Telmo, el lugar perfecto para comenzar tu viaje en la capital argentina.",
     },
     {
         paragraph: "Nuestro amigable personal te recibirá con los brazos abiertos, asegurándose de que te sientas como en casa desde el momento en que llegás.",
         image: "../../../../assets/images/hostel_image_2.jpg"
     },
     {
-        paragraph: "Nos enorgullece crear un ambiente acogedor y relajado donde los viajeros de todo el mundo pueden conocerse y compartir experiencias..",
+        paragraph: "Nos enorgullece crear un ambiente acogedor y relajado donde los viajeros de todo el mundo pueden conocerse y compartir experiencias.",
     }
 ]
 

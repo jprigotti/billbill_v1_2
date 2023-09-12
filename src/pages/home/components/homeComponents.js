@@ -1,4 +1,4 @@
-export { default as About} from "./about/About";
+export { default as About1} from "./about/About1";
 export { default as Contact} from "./contact/Contact";
 export { default as Gallery} from "./gallery/Gallery";
 export { default as Hero} from "./hero/Hero";

@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
+import CustomStyles from "../../../../utils/CustomStyles";
 import "../../../../utils/global.css"
+import "./Gallery.css"
 
 // Import Swiper styles
 import "./Swiper.css";
@@ -35,7 +37,7 @@ const Gallery = () => {
 
 
   return (
-    <div className='main-container mb-10'>
+    <div className="main-container mb-10">
       <Swiper
         loop={true}
         pagination={false}
@@ -47,15 +49,16 @@ const Gallery = () => {
         className="mySwiper">
         {imageData.map((image, index) => {
           return (
-          <SwiperSlide 
-          key={index}
-          style={{
-            background: "transparent",
-          }}>
-            <img
-              className=""
-              src={image.imageUrl} />
-          </SwiperSlide>)
+            <SwiperSlide
+              key={index}
+              style={{
+                background: "transparent",
+              }}>
+              <img
+                className=""
+                src={image.imageUrl} />
+            </SwiperSlide>
+          )
         })}
       </Swiper>
     </div>

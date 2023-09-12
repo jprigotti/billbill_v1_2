@@ -4,8 +4,8 @@ import styled from 'styled-components';
 const CustomStyles = {};
 
 CustomStyles.title1 = styled.h1.attrs({
-    // className: 
-  })`
+  // className: 
+})`
   font-family: var(--poppins);
   font-size: 3rem;
   font-weight: 700;
@@ -13,9 +13,9 @@ CustomStyles.title1 = styled.h1.attrs({
   color: var(--color1);
   `;
 
-  CustomStyles.title2 = styled.h1.attrs({
-    // className: 
-  })`
+CustomStyles.title2 = styled.h1.attrs({
+  // className: 
+})`
   font-family: var(--poppins);
   font-size: 3rem;
   font-weight: 700;
@@ -24,27 +24,27 @@ CustomStyles.title1 = styled.h1.attrs({
 
   `;
 
-  CustomStyles.title3 = styled.h1.attrs({
-    // className: 
-  })`
+CustomStyles.title3 = styled.h1.attrs({
+  // className: 
+})`
   font-family: var(--poppins);
   font-size: 3rem;
   font-weight: 700;
   text-shadow: 2px 2px 3px var(--jungle-green);
   color: var(--color3);
   `;
-  CustomStyles.title4 = styled.h1.attrs({
-    // className: 
-  })`
+CustomStyles.title4 = styled.h1.attrs({
+  // className: 
+})`
   font-family: var(--poppins);
   font-size: 3rem;
   font-weight: 700;
   text-shadow: 2px 2px 3px var(--jungle-green);
   color: var(--color4);
   `;
-  CustomStyles.title5 = styled.h1.attrs({
-    // className: 
-  })`
+CustomStyles.title5 = styled.h1.attrs({
+  // className: 
+})`
   font-family: var(--poppins);
   font-size: 3rem;
   font-weight: 700;
@@ -52,9 +52,9 @@ CustomStyles.title1 = styled.h1.attrs({
   color: var(--color5);
    `;
 
-   CustomStyles.title6 = styled.h1.attrs({
-    // className: 
-  })`
+CustomStyles.title6 = styled.h1.attrs({
+  // className: 
+})`
   font-family: var(--poppins);
   font-size: 3rem;
   font-weight: 700;
@@ -139,9 +139,17 @@ CustomStyles.buttonSend = styled.button.attrs({
   font-weight: 600;
   font-size: 1.2rem;
   background-color: var(--gray-nurse);
+  border: 2px solid var(--gray-nurse);
   cursor: pointer;
   text-align: center;
   border-radius: 5px;
+  transition: 0.3s all;
+
+  &:hover {
+    border: 2px solid var(--gray-nurse);
+    background-color: var(--heavy-black);
+    color: var(--gray-nurse);
+  }
 `;
 
 export default CustomStyles;
