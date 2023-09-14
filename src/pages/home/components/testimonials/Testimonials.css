@@ -1,5 +1,10 @@
+
 .testimonials-swiper {
-  
+}
+
+.swiper{
+  display: flex !important;
+  align-items: flex-end !important;
 }
 
 .testimonials-swiperSlide {
@@ -15,6 +20,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 350px;
 }
 
 .testimonials-card-header {
@@ -56,7 +62,7 @@
 }
 
 .testimonials-card-body {
-  padding: 3rem 1rem;
+  padding: 2rem 1rem;
 }
 
 .testimonials-card-body .comments {

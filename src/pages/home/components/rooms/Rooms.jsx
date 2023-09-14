@@ -27,7 +27,7 @@ const Rooms = () => {
             slidesPerView={3}
             breakpoints={{
               200: {
-                // slidesPerView: 1,
+                slidesPerView: 1,
                 spaceBetween: 20,
               },
               768: {
