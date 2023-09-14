@@ -11,7 +11,7 @@ import "./Rooms.css";
 
 const Rooms = () => {
   return (
-    <div className="main-container rooms mb-10">
+    <div id="section-rooms" className="main-container rooms mb-10">
       <div className="rooms-container">
         <div className="rooms-header">
           <CustomStyles.title5 className='mb-1'>Habitaciones</CustomStyles.title5 >

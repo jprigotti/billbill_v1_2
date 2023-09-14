@@ -6,6 +6,11 @@ import { menuItems } from "../../../src/components/navBar/menuItems.js";
 import { TfiLocationPin } from "react-icons/tfi";
 import { TfiHeadphoneAlt } from "react-icons/tfi";
 import "../../utils/global.css"
+import {
+  FaFacebook,
+  FaInstagram,
+  FaWhatsapp,
+} from "react-icons/fa";
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(true);
@@ -62,15 +67,14 @@ const Navbar = () => {
             {menuItems.map((item, index) => {
               return (<p key={index}><a className="mx-2 underline-effect" href={item.tag}>{item.name}</a></p>)
             })}
-            <div className="navbar-info">
-              <TfiLocationPin size={20} className="mx-1" />
-              <p>Chile 680, Buenos Aires, Argentina</p>
-              <div className='mx-1'></div>
-              <TfiHeadphoneAlt size={20} className="mx-1" />
-              <p>+54911-23914629</p>
-            </div>
           </div>
-        </div>
+          </div>
+        <div className="navbar-info">
+          <a href="https://www.facebook.com/profile.php?id=100093606550739&mibextid=ZbWKwL" target='_blank'><FaFacebook size={35} /></a>
+            <div className='mx-1'></div>
+            <a href="https://www.instagram.com/billandbillsantelmo/" target='_blank'><FaInstagram size={35} /></a>
+          </div>
+
 
 
 
@@ -78,7 +82,6 @@ const Navbar = () => {
           {!toggleMenu
             ? <RiCloseLine color="#000" size={27} onClick={() => setToggleMenu(true)} />
             : <RiMenu3Line color="#000" size={27} onClick={() => setToggleMenu(false)} />}
-          {/* {toggleMenu && ( */}
           <div className={toggleMenu ? 'gpt3__navbar-menu_container show-menu' : 'gpt3__navbar-menu_container  hide-menu'}>
             <div className="gpt3__navbar-menu_container-links">
               {menuItems.map((item, index) => {
@@ -86,7 +89,6 @@ const Navbar = () => {
               })}
             </div>
           </div>
-          {/* )} */}
         </div>
       </div>
 

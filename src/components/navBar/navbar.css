@@ -38,7 +38,13 @@
 
 .navbar-logo {
     display: flex;
+    position: relative;
 }
+
+/* .navbar-logo img{
+    position: absolute;
+    left: 0;
+} */
 
 .navbar-logo p {
     font-family: var(--poppins);
@@ -64,6 +70,11 @@
 .navbar-info {
     display: flex;
     align-items: center;
+}
+.navbar-info a {
+    display: flex;
+    align-items: center;
+    color: var(--heavy-black);
 }
 
 .navbar-info p {
@@ -180,7 +191,8 @@
 }
 
 @media screen and (max-width: 1050px) {
-    .navbar-content {
+    .navbar-content,
+    .navbar-info{
         display: none;
     }
 

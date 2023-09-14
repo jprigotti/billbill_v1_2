@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { About1, Contact, Gallery, Hero2, Hero3, Location, Rooms, Services1, SocialMedia, Testimonials, Testimonials2, Testimonials3, Newsletter, Bacity } from "../components/homeComponents"
 
 const HomeView = () => {
+    const [mapHeight, setMapHeigh] = useState("150")
     return (
         <div>
             <Hero3 />
@@ -11,8 +12,8 @@ const HomeView = () => {
             <Gallery />
             <Testimonials3 />
             <Contact />
-            <Newsletter />
-            <Location />
+            <Newsletter setMapHeight={setMapHeigh} mapHeight={mapHeight} />
+            <Location mapHeight = {mapHeight}/>
         </div>
     )
 }

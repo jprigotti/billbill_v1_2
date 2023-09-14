@@ -31,7 +31,7 @@ const Hero3 = () => {
     }, []);
 
     return (
-        <div className="hero mb-5">
+        <div id="section-hero" className="hero mb-5">
             <Swiper
                 loop={true}
                 autoplay={{
