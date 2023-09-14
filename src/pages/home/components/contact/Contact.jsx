@@ -3,6 +3,9 @@ import { useState } from 'react';
 import "./Contact.css"
 import CustomStyles from "../../../../utils/CustomStyles";
 import "../../../../utils/global.css"
+const urlFetch = "https://script.google.com/macros/s/AKfycbw_QHPSAxQATM25EatTGmkglDZFVSJUkitHfV4UMaVnTM3nIwqjwBpt6K8l7tWi8UMf/exec";
+const urlFetchDailu = "https://script.google.com/macros/s/AKfycbyKxrp0TOhXXRHhdt0_YRFeJKdMA2ei3242YwtFT5Kzlcdy4QIGbS39AzY15e9RQGut/exec";
+// link google script Dailu https://script.google.com/u/1/home/projects/1I0vZLBKK4JgAeRdTIV2zrlX1S20Lsr8n8UrfLIG4kKTgqIBM5IKif5MN/edit
 
 
 const Contact = () => {
@@ -10,10 +13,11 @@ const Contact = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+  const [btnSubmitText, setBtnSubmitText] = useState("Enviar");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Form submitted!');
+    setBtnSubmitText("...enviando...");
 
     const formData={
       recipient: email,
@@ -21,7 +25,7 @@ const Contact = () => {
       message: message
     }
 
-    fetch('https://script.google.com/macros/s/AKfycbw_QHPSAxQATM25EatTGmkglDZFVSJUkitHfV4UMaVnTM3nIwqjwBpt6K8l7tWi8UMf/exec', {
+    fetch(urlFetchDailu, {
       method: 'POST',
       redirect: "follow",
       dataType: 'json',
@@ -32,7 +36,12 @@ const Contact = () => {
       .then((data) => {
         // Handle the response from the Google Apps Script endpoint
         console.log("Response status: ", data.status);
-        console.log("Response message: ", data.message);
+        setBtnSubmitText("Enviado!");
+        setTimeout(()=>{setBtnSubmitText('Enviar')}, 2000);
+        setName("");
+        setEmail("");
+        setMessage("");
+
       })
       .catch((error) => {
         console.error('Error:', error);
@@ -63,7 +72,7 @@ const Contact = () => {
                 <textarea value={message} onChange={(e) => setMessage(e.target.value)} rows="6" placeholder="Mensaje" required/>
               </div>
               <div className="form-item">
-                <CustomStyles.buttonSend type="submit">Enviar</CustomStyles.buttonSend>
+                <CustomStyles.buttonSend type="submit">{btnSubmitText}</CustomStyles.buttonSend>
               </div>
             </form>
           </div>

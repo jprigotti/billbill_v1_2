@@ -69,6 +69,7 @@ const Testimonials3 = () => {
                     nationality={testimonial.nationality}
                     website={testimonial.website}
                     description={testimonial.description}
+                    flag={testimonial.flag}
                   />
                 </SwiperSlide>
               ))}
