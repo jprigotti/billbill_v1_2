@@ -31,9 +31,7 @@ const Testimonials3 = () => {
               position: "absolute",
               top: "50%",
               left: "50%",
-              transform: "translate(-50%, -50%)",
-              display: "flex",
-              alignItems: "flex-end",
+              transform: "translate(-50%, -50%)"
             }}>
             <Swiper
               effect={"coverflow"}

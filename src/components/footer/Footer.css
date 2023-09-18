@@ -203,7 +203,7 @@
 
     .footer .footer-container {
         top: initial;
-        width: 90%;
+        width: 100%;
         height: 100%;
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 15px;

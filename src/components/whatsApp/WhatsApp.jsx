@@ -5,7 +5,7 @@ import whatsAppIcon from "../../assets/whats.png";
 
 const WhatsApp = () => {
   const abrirWhatsApp = () => {
-    const numeroTelefono = "+5491134041910"; // ¡Asegúrate de incluir el código de país!
+    const numeroTelefono = "+5491123914629"; // ¡Asegúrate de incluir el código de país!
     const mensaje = "¡Hola! Estoy contactándote desde Bill&Bill";
     const url = `https://api.whatsapp.com/send?phone=${numeroTelefono}&text=${encodeURIComponent(
       mensaje
@@ -19,9 +19,9 @@ const WhatsApp = () => {
     if (typeof window !== "undefined") {
       const handleMouseScroll = (event) => {
         if (event.deltaY < 0) {
-          setScrollWhatsApp((prevScroll) => prevScroll + event.deltaY / 3);
+          setScrollWhatsApp((prevScroll) => prevScroll + event.deltaY / 7);
           setTimeout(function () {
-            setScrollWhatsApp((prevScroll) => prevScroll - event.deltaY / 3);
+            setScrollWhatsApp((prevScroll) => prevScroll - event.deltaY / 7);
           }, 2000);
         }
       };
@@ -42,8 +42,7 @@ const WhatsApp = () => {
         // transform: `translateY(${scrollWhatsApp/2}%)`,
         // transition: "1s ease-in-out",
         transition: "2s cubic-bezier(.58,.22,.23,.75)",
-        zIndex: "999",
-        cursor: "pointer"
+        zIndex: "999"
       }}
     >
       <button onClick={abrirWhatsApp} className="whatsApp-icon">

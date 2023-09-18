@@ -35,6 +35,10 @@ const Rooms = () => {
                 spaceBetween: 40,
               },
               1240: {
+                slidesPerView: 3,
+                spaceBetween: 40,
+              },
+              1500: {
                 slidesPerView: 4,
                 spaceBetween: 40,
               },
