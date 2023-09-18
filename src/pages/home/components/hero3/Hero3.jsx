@@ -59,7 +59,7 @@ const Hero3 = () => {
                                     backgroundRepeat: "no-repeat",
                                     height: "100%"
                                 }}>
-                                <div className="pattern-overlay">
+                                <div className="pattern-overlay1">
                                     <div className="hero-container">
                                         <h2>{image.imageText}</h2>
                                         {/* <h2>Donde la <span style={{ textShadow: "2px 2px 6px var(--jungle-green)" }}>Aventura</span> se Encuentra con la Comodidad</h2>

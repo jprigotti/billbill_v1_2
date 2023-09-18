@@ -1,6 +1,7 @@
 export { default as About1} from "./about/About1";
 export { default as Contact} from "./contact/Contact";
 export { default as Gallery} from "./gallery/Gallery";
+export { default as Gallery_mdq} from "./gallery_mdq/Gallery_mdq";
 export { default as Hero} from "./hero/Hero";
 export { default as Hero1} from "./hero1/Hero1";
 export { default as Hero2} from "./hero2/Hero2";
