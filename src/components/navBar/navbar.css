@@ -5,19 +5,18 @@
 
 .navbar {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
     padding: 0.5rem 0;
     position: fixed;
     width: 100%;
     align-self: center;
-
     /* background-image: linear-gradient(to bottom, rgb(255,255,255), rgba(0,0,0,0)); */
     z-index: 10;
-
+    transition: 0.3s ease-in-out;
 }
 
-.navbar-container{
+.navbar-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -39,6 +38,11 @@
 .navbar-logo {
     display: flex;
     position: relative;
+}
+
+.navbar-100vh {
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.8);
 }
 
 /* .navbar-logo img{
@@ -71,6 +75,7 @@
     display: flex;
     align-items: center;
 }
+
 .navbar-info a {
     display: flex;
     align-items: center;
@@ -154,36 +159,41 @@
 }
 
 .gpt3__navbar-menu_container {
+    margin-top: 0;
+    padding-top: 0;
+    width: 100%;
     display: flex;
     justify-content: flex-end;
-    align-items: flex-end;
+    align-items: center;
     flex-direction: column;
-    text-align: end;
-    background: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    /* background: rgba(255, 255, 255, 0.8); */
     padding: 2rem;
-    position: absolute;
-    right: 0;
-    top: 60px !important;
-    min-width: 210px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
-
-
+    margin-top: 0.5rem;
+    /* position: absolute; */
+    /* right: 0;
+    top: 60px !important; */
+    /* min-width: 210px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); */
 }
 
 .show-menu {
-    transform: translateX(300px);
-    transition: 0.5s
+    display: none;
 }
 
 .hide-menu {
-    transform: translateX(0);
-    transition: 0.5s
+    display: block;
 }
 
 
+
 .gpt3__navbar-menu_container-links p {
-    margin: 1rem 0;
-    text-align: right;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.gpt3__navbar-menu_container-links a {
+    text-decoration: none;
 }
 
 .gpt3__navbar-menu_container-links-sign {
@@ -191,8 +201,9 @@
 }
 
 @media screen and (max-width: 1050px) {
+
     .navbar-content,
-    .navbar-info{
+    .navbar-info {
         display: none;
     }
 

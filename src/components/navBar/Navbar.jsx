@@ -45,9 +45,9 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="navbar"
-      style={{
-        backgroundImage: `linear-gradient(to bottom, rgba(255, 255, 255, ${alpha}), rgba(255,255,255, ${alpha}))`
+    <div className={toggleMenu ? 'navbar': 'navbar navbar-100vh'}
+      style={{  
+      backgroundImage: `linear-gradient(to bottom, rgba(255, 255, 255, ${alpha}), rgba(255,255,255, ${alpha}))`
       }}>
       <div className="main-container navbar-container">
         <div className="navbar-logo mx-2">
@@ -68,27 +68,26 @@ const Navbar = () => {
               return (<p key={index}><a className="mx-2 underline-effect" href={item.tag}>{item.name}</a></p>)
             })}
           </div>
-          </div>
+        </div>
         <div className="navbar-info">
           <a href="https://www.facebook.com/profile.php?id=100093606550739&mibextid=ZbWKwL" target='_blank'><FaFacebook size={35} /></a>
-            <div className='mx-1'></div>
-            <a href="https://www.instagram.com/billandbillsantelmo/" target='_blank'><FaInstagram size={35} /></a>
-          </div>
-
-
-
-
+          <div className='mx-1'></div>
+          <a href="https://www.instagram.com/billandbillsantelmo/" target='_blank'><FaInstagram size={35} /></a>
+        </div>
         <div className="gpt3__navbar-menu">
           {!toggleMenu
             ? <RiCloseLine color="#000" size={27} onClick={() => setToggleMenu(true)} />
             : <RiMenu3Line color="#000" size={27} onClick={() => setToggleMenu(false)} />}
-          <div className={toggleMenu ? 'gpt3__navbar-menu_container show-menu' : 'gpt3__navbar-menu_container  hide-menu'}>
-            <div className="gpt3__navbar-menu_container-links">
-              {menuItems.map((item, index) => {
-                return (<p key={index}><a className="mx-2 underline-effect" href={item.tag}>{item.name}</a></p>)
-              })}
-            </div>
-          </div>
+        </div>
+      </div>
+
+
+
+      <div className={toggleMenu ? 'gpt3__navbar-menu_container show-menu' : 'gpt3__navbar-menu_container  hide-menu'}>
+        <div className="gpt3__navbar-menu_container-links">
+          {menuItems.map((item, index) => {
+            return (<p key={index}><a className="mx-2 underline-effect" href={item.tag}>{item.name}</a></p>)
+          })}
         </div>
       </div>
 
