@@ -68,7 +68,7 @@ const Contact = () => {
               <div className="form-item">
                 <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email" required />
               </div>
-              <div className="form-item">
+              <div className="form-item mb-1">
                 <textarea value={message} onChange={(e) => setMessage(e.target.value)} rows="6" placeholder="Mensaje" required/>
               </div>
               <div className="form-item">

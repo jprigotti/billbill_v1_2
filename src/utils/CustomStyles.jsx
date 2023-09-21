@@ -9,7 +9,7 @@ CustomStyles.title1 = styled.h1.attrs({
   font-family: var(--poppins);
   font-size: 3.5rem;
   font-weight: 700;
-  color: var(--primary-black);
+  color: var(--primary-dark);
   `;
 
 CustomStyles.title2 = styled.h1.attrs({
@@ -130,12 +130,11 @@ CustomStyles.buttonSend = styled.button.attrs({
   /* Add any additional custom styles here */
   all: unset;
   width: 200px;
-  margin: 1rem 0;
-  padding: 1rem 2rem;
+  padding: 0.5rem 1rem;
   color: var(--heavy-black);
   font-family: var(--poppins);
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 1rem;
   background-color: var(--gray-nurse);
   border: 2px solid var(--gray-nurse);
   cursor: pointer;
@@ -145,7 +144,7 @@ CustomStyles.buttonSend = styled.button.attrs({
 
   &:hover {
     border: 2px solid var(--gray-nurse);
-    background-color: var(--heavy-black);
+    background-color: transparent;
     color: var(--gray-nurse);
   }
 `;

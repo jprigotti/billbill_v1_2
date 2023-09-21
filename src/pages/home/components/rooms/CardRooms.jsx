@@ -19,11 +19,7 @@ const CardRooms = ({ id, image, title, priceTag, price, category, type, descript
             <p>{priceTag}</p>
             <p className="price mb-5">{price}</p>
           </div>
-          <div className="rooms-card-body-footer">
-            <p>
-              <CustomStyles.buttonSend>Mas info</CustomStyles.buttonSend>
-            </p>
-          </div>
+
         </div>
       </div>
 
@@ -31,8 +27,14 @@ const CardRooms = ({ id, image, title, priceTag, price, category, type, descript
         style={{ background: `linear-gradient(to bottom, ${color1}, ${color2})` }}>
         <div>
           <p>{category}</p>
-          <p>{type}</p>
+          <p className="mb-1">{type}</p>
+          <div className="rooms-card-body-footer">
+            <p>
+              <CustomStyles.buttonSend>Reservar</CustomStyles.buttonSend>
+            </p>
+          </div>
         </div>
+
       </div>
 
     </div>
