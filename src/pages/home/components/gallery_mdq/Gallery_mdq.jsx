@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import CustomStyles from "../../../../utils/CustomStyles";
 import "../../../../utils/global.css"
 import "./Gallery_mdq.css"
+import {FaInstagram} from "react-icons/fa";
 
 // Import Swiper styles
 import "./Swiper.css";
@@ -38,6 +39,9 @@ const Gallery_mdq = () => {
 
   return (
     <div className="main-container mb-10">
+      <div className="gallery-mdq-header">
+        <CustomStyles.title1 className='mb-1'>BILL&BILL MDQ</CustomStyles.title1 >
+      </div>
       <Swiper
         loop={true}
         pagination={false}
@@ -61,7 +65,11 @@ const Gallery_mdq = () => {
           )
         })}
       </Swiper>
+      <div className="gallery-mdq-header">
+      <p>Visitanos en Instagram <span><a href="https://www.instagram.com/hostel_billandbill/?igshid=MzRlODBiNWFlZA%3D%3D" target="_blank"><FaInstagram /></a></span></p>
+      </div>
     </div>
+
   )
 }
 

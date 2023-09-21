@@ -3,11 +3,8 @@ p {
     font-size: 1rem;
 }
 
-.contact {}
-
 .contact-container {
     width: 100%;
-    /* padding: 1rem; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -16,7 +13,6 @@ p {
 
 .contact-info {
     width: 45%;
-    /* background-color: aqua; */
 }
 
 .contact-info-body {
@@ -31,25 +27,32 @@ p {
 }
 
 .contact-form {
-  position: relative; /* Add this to make ::before position correctly */
-  width: 50%;
-  /* background-color: var(--eucalyptus); */
-  background: linear-gradient(135deg, rgba(86, 34, 139, .7), rgba(204, 0, 116, .7));
-  padding: 1rem;
-  border-radius: 10px;
-  z-index: 1; /* Add this to ensure the form is above the ::before element */
+    position: relative;
+    /* Add this to make ::before position correctly */
+    width: 50%;
+    /* background-color: var(--eucalyptus); */
+    /* background: linear-gradient(135deg, rgba(86, 34, 139, .7), rgba(204, 0, 116, .7)); */
+    background-color: var(--contrast-2);
+    padding: 1rem;
+    border-radius: 10px;
+    z-index: 1;
+    /* Add this to ensure the form is above the ::before element */
 }
 
 .contact-form::before {
-  content: "";
-  position: absolute;
-  left: 0; /* Stretch the ::before element horizontally */
-  right: 0;
-  background: linear-gradient(90deg, rgba(86, 34, 139, .7) 10.67%, rgba(204, 0, 116, .7) 95.35%);
-  filter: blur(32px);
-  height: 10%;
-  bottom: -20px; /* Adjust the position based on your preference */
-  z-index: -1; /* Set a lower z-index to place it behind the form */
+    /* content: "";
+    position: absolute;
+    left: 0; */
+    /* Stretch the ::before element horizontally */
+    /* right: 0; */
+    /* background: linear-gradient(90deg, rgba(86, 34, 139, .7) 10.67%, rgba(204, 0, 116, .7) 95.35%); */
+    /* background-color: var(--contrast-2); */
+    /* filter: blur(32px); */
+    /* height: 10%;
+    bottom: -20px; */
+    /* Adjust the position based on your preference */
+    /* z-index: -1; */
+    /* Set a lower z-index to place it behind the form */
 }
 
 .form-item {

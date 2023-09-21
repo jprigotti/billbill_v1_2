@@ -19,7 +19,7 @@ const Services1 = () => {
     <div className='services mb-10'>
       <div className="main-container services-container">
         <div className="services-header">
-          <CustomStyles.title1 className='mb-2'>Servicios</CustomStyles.title1>
+          <CustomStyles.title2 className='mb-2'>Servicios</CustomStyles.title2>
         </div>
         <div className="services-body">
           <Swiper

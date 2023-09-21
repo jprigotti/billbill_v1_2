@@ -38,6 +38,9 @@ const Gallery = () => {
 
   return (
     <div className="main-container mb-10">
+      <div className="gallery-header">
+        <CustomStyles.title1 className='mb-1'>BILL&BILL SAN TELMO</CustomStyles.title1 >
+      </div>
       <Swiper
         loop={true}
         pagination={false}

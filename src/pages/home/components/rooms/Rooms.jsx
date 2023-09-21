@@ -14,7 +14,7 @@ const Rooms = () => {
     <div id="section-rooms" className="main-container rooms mb-10">
       <div className="rooms-container">
         <div className="rooms-header">
-          <CustomStyles.title5 className='mb-1'>Habitaciones</CustomStyles.title5 >
+          <CustomStyles.title1 className='mb-1'>Habitaciones</CustomStyles.title1 >
           <p> Ofrecemos una variedad de opciones de alojamiento para adaptarnos a tus necesidades. Ya sea que prefieras dormitorios compartidos o habitaciones privadas, todas están diseñadas para brindarte comodidad y privacidad.</p>
         </div>
 
@@ -58,6 +58,8 @@ const Rooms = () => {
                   category={room.category}
                   type={room.type}
                   description={room.description}
+                  color1={room.color1}
+                  color2={room.color2}
                 />
               </SwiperSlide>
             ))}

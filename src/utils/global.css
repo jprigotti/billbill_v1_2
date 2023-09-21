@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');  
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100&display=swap');
 
 
@@ -9,6 +9,22 @@
     --error-color: rgb(255, 98, 0);
     --btn-color-grey: #f2f2f2;
     --btn-color-grey-hover: #f2f2f283;
+
+    /* Paleta primaria - Logo */
+    --primary-black: rgb(18 20 23);
+    --primary-green: #0ac4b4;
+    --primary-white: rgba(231, 234, 227, 1);
+
+    /* Paleta secundaria  */
+    --secondary-1: rgb(0, 126, 148);
+    --secondary-2: rgb(57, 124, 73);
+    --secondary-3: rgb(0, 126, 148);
+
+    /* Paleta contraste  */
+    --contrast-1: #56228b;
+    --contrast-2: rgba(204, 0, 116, .7);
+    --contrast-3: #f25621;
+    --contrast-4: rgb(240, 144, 161);
 
     /* Paleta de colores de la applicacion RGB */
     --heavy-metal: rgba(36, 44, 36, 1);
@@ -28,10 +44,16 @@
     --color3: #5bcebf;
     --color4: #32b9be;
     --color5: #2e97b7;
-    --color6: rgba(86,34,139,.7);
-    --color7: rgba(204,0,116,.7);
+    --color6: rgba(86, 34, 139, .7);
+    --color7: rgba(204, 0, 116, .7);
     --color8: #0ac4b4;
     --color9: #f25621;
+
+    --color-room-1: rgb(0, 126, 148);
+    --color-room-2: rgb(240, 144, 161);
+    --color-room-3: rgb(57, 124, 73);
+    --color-room-4: rgb(0, 126, 148);
+    --color-room-5: rgb(120, 135, 155);
 
 
     --color-newsletter: #00e0ce;

@@ -10,7 +10,7 @@ const About1 = () => {
     <div className='about main-container mb-5'>
       <div className="about-container">
         <div className="about-header">
-          <CustomStyles.title5 className='mb-1'>Bienvenidos!</CustomStyles.title5 >
+          <CustomStyles.title1 className='mb-1'>Bienvenidos!</CustomStyles.title1 >
         </div>
 
         <div className="about-body">

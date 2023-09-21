@@ -7,20 +7,18 @@ CustomStyles.title1 = styled.h1.attrs({
   // className: 
 })`
   font-family: var(--poppins);
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 700;
-  text-shadow: 2px 2px 3px var(--jungle-green);
-  color: var(--color1);
+  color: var(--primary-black);
   `;
 
 CustomStyles.title2 = styled.h1.attrs({
   // className: 
 })`
   font-family: var(--poppins);
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 700;
-  text-shadow: 2px 2px 3px var(--jungle-green);
-  color: var(--color2);
+  color: var(--primary-white);
 
   `;
 

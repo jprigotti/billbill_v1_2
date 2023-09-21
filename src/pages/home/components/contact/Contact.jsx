@@ -55,7 +55,7 @@ const Contact = () => {
       <div className="contact-container">
         <div className="contact-info">
           <div className="contact-info-body mb-1">
-            <CustomStyles.title6 >Contactate</CustomStyles.title6>
+            <CustomStyles.title1 >Contactate</CustomStyles.title1>
             <p>Tenes dudas, consultas? Escribinos!</p>
           </div>
         </div>

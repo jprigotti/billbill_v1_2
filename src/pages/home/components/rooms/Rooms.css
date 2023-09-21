@@ -4,28 +4,23 @@
 
 .rooms-swiperSlide {}
 
-.rooms-container{
+.rooms-container {}
 
-
+.rooms-header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.rooms-header{
-width: 100%;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-}
-
-.rooms-header p{
+.rooms-header p {
   font-family: var(--indieFlower);
   font-size: 1.2rem;
   text-align: center;
 }
 
-.rooms.body{
-
-}
+.rooms.body {}
 
 /* Estilos para la clase "card" */
 .rooms-card {
@@ -33,14 +28,17 @@ justify-content: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
+  padding: 1rem;
+  /* background-color: var(--color-room-1); */
 }
 
 .rooms-card-image {
+  position: relative;
   width: 100%;
   height: 400px;
   background-repeat: no-repeat;
   background-size: cover;
+
 }
 
 .rooms-card-body-content {
@@ -80,8 +78,9 @@ justify-content: center;
 .rooms-card-footer {
   width: 100%;
   height: 150px;
-  background-color: var(--gray-nurse);
-  color: var(--heavy-metal);
+  /* background-color: var(--gray-nurse); */
+  background-color: var(--color-room-1);
+  color: var(--gray-nurse);
   display: flex;
   justify-content: center;
   align-items: center;
