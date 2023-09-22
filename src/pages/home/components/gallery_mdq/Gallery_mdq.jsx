@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import CustomStyles from "../../../../utils/CustomStyles";
 import "../../../../utils/global.css"
 import "./Gallery_mdq.css"
-import {FaInstagram} from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 
 // Import Swiper styles
 import "./Swiper.css";
@@ -66,7 +66,8 @@ const Gallery_mdq = () => {
         })}
       </Swiper>
       <div className="gallery-mdq-header">
-      <p>Visitanos en Instagram <span><a href="https://www.instagram.com/hostel_billandbill/?igshid=MzRlODBiNWFlZA%3D%3D" target="_blank"><FaInstagram /></a></span></p>
+        <p>Visita nuestro Instagram</p>
+        <div><a href="https://www.instagram.com/hostel_billandbill/?igshid=MzRlODBiNWFlZA%3D%3D" target="_blank"><FaInstagram size={45} color="var(--primary-black)" /></a></div>
       </div>
     </div>
 

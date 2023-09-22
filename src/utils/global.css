@@ -23,8 +23,9 @@
 
     /* Paleta contraste  */
     --contrast-1: #56228b;
+    --contrast-1-light: rgba(86, 34, 139, 0.6);
     --contrast-2: rgba(204, 0, 116, .7);
-    --contrast-3: #f25621;
+    --contrast-3: rgba(242, 86, 33, 0.9);
     --contrast-4: rgb(240, 144, 161);
 
     /* Paleta de colores de la applicacion RGB */

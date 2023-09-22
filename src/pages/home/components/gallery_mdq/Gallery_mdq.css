@@ -20,6 +20,7 @@
 .gallery-mdq-header p {
     font-family: var(--poppins);
     font-size: 1.2rem;
+    color: var(--secondary-1)
 }
 
 .gallery-mdq-header a {

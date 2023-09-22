@@ -2,6 +2,7 @@ import image1 from "../../../../assets/images/hero_selection/hostel_frente_16_9.
 import image2 from "../../../../assets/images/hero_selection/terraze_fun.jpeg"
 import image3 from "../../../../assets/images/hero_selection/bed_towels.jpg"
 import image4 from "../../../../assets/images/hero_selection/hostel_frente_4_3.jpg"
+import image5 from "../../../../assets/images/hero_selection/billbill_amigos.png"
 
 
 export const images16x9 = [

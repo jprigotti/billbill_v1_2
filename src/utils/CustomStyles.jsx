@@ -7,7 +7,7 @@ CustomStyles.title1 = styled.h1.attrs({
   // className: 
 })`
   font-family: var(--poppins);
-  font-size: 3.5rem;
+  font-size: 4.5rem;
   font-weight: 700;
   color: var(--primary-dark);
   `;
@@ -59,6 +59,16 @@ CustomStyles.title6 = styled.h1.attrs({
   text-shadow: 2px 2px 3px var(--heavy-metal);
   color: var(--eucalyptus);
    `;
+
+
+   CustomStyles.title7 = styled.h1.attrs({
+    // className: 
+  })`
+    font-family: var(--poppins);
+    font-size: 4rem;
+    font-weight: 700;
+    color: var( --contrast-1);
+    `;
 
 
 CustomStyles.div = styled.div.attrs({
@@ -137,6 +147,32 @@ CustomStyles.buttonSend = styled.button.attrs({
   font-size: 1rem;
   background-color: var(--gray-nurse);
   border: 2px solid var(--gray-nurse);
+  cursor: pointer;
+  text-align: center;
+  border-radius: 5px;
+  transition: 0.3s all;
+
+  &:hover {
+    border: 2px solid var(--gray-nurse);
+    background-color: transparent;
+    color: var(--gray-nurse);
+  }
+`;
+
+CustomStyles.buttonBook = styled.button.attrs({
+  //   className: "btn btn-success btn-sm"
+})`
+  /* Your custom styles */
+  /* Add any additional custom styles here */
+  all: unset;
+  width: 200px;
+  padding: 0.5rem 1rem;
+  color: var(--primary-white);
+  font-family: var(--poppins);
+  font-weight: 600;
+  font-size: 1rem;
+  background-color: var(--contrast-1-light);
+  border: 2px solid var(--contrast-1);
   cursor: pointer;
   text-align: center;
   border-radius: 5px;

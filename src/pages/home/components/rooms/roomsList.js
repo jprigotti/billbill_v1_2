@@ -1,6 +1,7 @@
-import img1 from "../../../../assets/images/hostel_image_1.jpg";
-import img2 from "../../../../assets/images/gallery_6.jpg";
-import img3 from "../../../../assets/images/gallery_9.jpg";
+import img1 from "../../../../assets/images/rooms/shared_boys.jpeg";
+import img2 from "../../../../assets/images/rooms/shared_girls.jpeg";
+import img3 from "../../../../assets/images/rooms/shared_mix.jpg";
+import img4 from "../../../../assets/images/rooms/private.jpg";
 
 
 const roomsList = [
@@ -18,7 +19,7 @@ const roomsList = [
   },
   {
     id: 2,
-    image: img1,
+    image: img2,
     title: "Habitacion 2",
     priceTag: "Precio por noche",
     price: "$10usd",
@@ -42,7 +43,7 @@ const roomsList = [
   },
   {
     id: 4,
-    image: img3,
+    image: img4,
     title: "Habitacion 3",
     priceTag: "Precio por noche",
     price: "$30usd",
