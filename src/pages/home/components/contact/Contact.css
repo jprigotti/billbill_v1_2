@@ -39,16 +39,13 @@ p {
 }
 
 .contact-form {
-    position: relative;
-    /* Add this to make ::before position correctly */
+    margin: 0 auto;
     width: 50%;
-    /* background-color: var(--eucalyptus); */
-    /* background: linear-gradient(135deg, rgba(86, 34, 139, .7), rgba(204, 0, 116, .7)); */
+    max-width: 700px;
     background-color: var(--contrast-2);
     padding: 1rem;
     border-radius: 10px;
     z-index: 1;
-    /* Add this to ensure the form is above the ::before element */
 }
 
 .contact-form::before {
@@ -106,7 +103,7 @@ p {
 
 @media screen and (max-width: 1050px) {}
 
-@media screen and (max-width: 700px) {
+/* @media screen and (max-width: 700px) {
     .main-container {
         width: 95% !important;
     }
@@ -146,9 +143,9 @@ p {
     .contact-form {
         width: 100%;
     }
-}
+} */
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 1100px) {
     .main-container {
         width: 95% !important;
     }
@@ -159,6 +156,7 @@ p {
 
     .contact-info-body {
         align-items: center;
+        text-align: center;
     }
 
     .contact-info-body-title1 {

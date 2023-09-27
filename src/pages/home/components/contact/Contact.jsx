@@ -64,13 +64,13 @@ const Contact = () => {
             </div>
             <div className='contact-info-body-socialmedia'>
               <a href="https://www.facebook.com/profile.php?id=100093606550739&mibextid=ZbWKwL" target='_blank'>
-                <FaFacebook size={55} className='mx-1' color='var(--primary-black)'/>
+                <FaFacebook size={45} className='mx-1 mt-1' color='var(--primary-black)'/>
               </a>
               <a href="https://www.instagram.com/billandbillsantelmo/" target='_blank'>
-                <FaInstagram size={55} className='mx-1' color='var(--primary-black)' />
+                <FaInstagram size={45} className='mx-1 mt-1' color='var(--primary-black)' />
               </a>
               <a href="">
-                <FaWhatsapp size={55} className='mx-1' color='var(--primary-black)' />
+                <FaWhatsapp size={45} className='mx-1 mt-1' color='var(--primary-black)' />
               </a>
             </div>
 
