@@ -40,7 +40,8 @@ const Gallery_mdq = () => {
   return (
     <div className="main-container mb-10">
       <div className="gallery-mdq-header">
-        <CustomStyles.title1 className='mb-1'>BILL&BILL MDQ</CustomStyles.title1 >
+        <CustomStyles.title1 >BILL&BILL MDQ</CustomStyles.title1 >
+        <p>Tambien en Mar del Plata</p>
       </div>
       <Swiper
         loop={true}
@@ -65,8 +66,8 @@ const Gallery_mdq = () => {
           )
         })}
       </Swiper>
-      <div className="gallery-mdq-header">
-        <p>Visita nuestro Instagram</p>
+      <div className="gallery-mdq-footer">
+        <p className="mx-1">Visita nuestro Instagram</p>
         <div><a href="https://www.instagram.com/hostel_billandbill/?igshid=MzRlODBiNWFlZA%3D%3D" target="_blank"><FaInstagram size={45} color="var(--primary-black)" /></a></div>
       </div>
     </div>

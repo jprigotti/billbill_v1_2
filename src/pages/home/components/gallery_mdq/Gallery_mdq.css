@@ -6,15 +6,10 @@
 .gallery-mdq-header {
     width: 100%;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     padding: 0.5rem;
-}
-
-.gallery-mdq-header {
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
 }
 
 .gallery-mdq-header p {
@@ -27,4 +22,18 @@
     text-decoration: none;
     cursor: pointer;
     color: black;
+}
+
+.gallery-mdq-footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.gallery-mdq-footer p {
+    font-family: var(--poppins);
+    font-size: 1.2rem;
+    color: var(--secondary-1)
 }

@@ -44,10 +44,18 @@ const Navbar = () => {
     }
   }, []);
 
+  const handleClick = (anchor) => {
+    const element = document.querySelector(anchor);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+    setToggleMenu(!toggleMenu);
+  };
+
   return (
-    <div className={toggleMenu ? 'navbar': 'navbar navbar-100vh'}
-      style={{  
-      backgroundImage: `linear-gradient(to bottom, rgba(255, 255, 255, ${alpha}), rgba(255,255,255, ${alpha}))`
+    <div className={toggleMenu ? 'navbar' : 'navbar navbar-100vh'}
+      style={{
+        backgroundImage: `linear-gradient(to bottom, rgba(255, 255, 255, ${alpha}), rgba(255,255,255, ${alpha}))`
       }}>
       <div className="main-container navbar-container">
         <div className="navbar-logo mx-2">
@@ -86,7 +94,7 @@ const Navbar = () => {
       <div className={toggleMenu ? 'gpt3__navbar-menu_container show-menu' : 'gpt3__navbar-menu_container  hide-menu'}>
         <div className="gpt3__navbar-menu_container-links">
           {menuItems.map((item, index) => {
-            return (<p key={index}><a className="mx-2 underline-effect" href={item.tag}>{item.name}</a></p>)
+            return (<button className="mx-2 mb-2 btn-item" key={index} onClick={() => handleClick(item.tag)}>{item.name}</button>)
           })}
         </div>
       </div>
