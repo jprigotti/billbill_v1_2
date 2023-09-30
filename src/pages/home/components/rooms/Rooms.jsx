@@ -1,9 +1,10 @@
 import React from "react";
-import { Pagination } from "swiper";
+import { Autoplay, Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import CustomStyles from "../../../../utils/CustomStyles";
 import "swiper/css";
 import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 import CardRooms from "./CardRooms";
 import roomsList from "./roomsList";
@@ -20,9 +21,10 @@ const Rooms = () => {
 
         <div className="rooms-body">
           <Swiper
-            // loop={false}
-            // grabCursor={true}
-            // centeredSlides={true}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: true,
+            }}
             spaceBetween={10}
             slidesPerView={3}
             breakpoints={{
@@ -39,12 +41,12 @@ const Rooms = () => {
                 spaceBetween: 40,
               },
               1500: {
-                slidesPerView: 4,
+                slidesPerView: 3,
                 spaceBetween: 40,
               },
             }}
-            modules={[Pagination]}
-            pagination={{ clickable: true }}
+            modules={[Autoplay, Navigation]}
+            navigation={true}
             className="rooms-swiper"
           >
             {roomsList.map((room) => (
