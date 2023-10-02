@@ -1,10 +1,11 @@
 import React from "react";
-import { Autoplay, Navigation } from "swiper";
+import { Autoplay, Navigation, Scrollbar } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import CustomStyles from "../../../../utils/CustomStyles";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import 'swiper/css/scrollbar';
 
 import CardRooms from "./CardRooms";
 import roomsList from "./roomsList";
@@ -24,6 +25,10 @@ const Rooms = () => {
             autoplay={{
               delay: 2500,
               disableOnInteraction: true,
+              stopOnLastSlide: true
+            }}
+            scrollbar={{
+              hide: false,
             }}
             spaceBetween={10}
             slidesPerView={3}
@@ -45,7 +50,7 @@ const Rooms = () => {
                 spaceBetween: 40,
               },
             }}
-            modules={[Autoplay, Navigation]}
+            modules={[Autoplay, Navigation, Scrollbar]}
             navigation={true}
             className="rooms-swiper"
           >
@@ -54,12 +59,9 @@ const Rooms = () => {
                 <CardRooms
                   key={room.id}
                   image={room.image}
-                  title={room.title}
-                  priceTag={room.priceTag}
-                  price={room.price}
                   category={room.category}
+                  bathroom={room.bathroom}
                   type={room.type}
-                  description={room.description}
                   color1={room.color1}
                   color2={room.color2}
                 />

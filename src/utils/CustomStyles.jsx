@@ -171,16 +171,16 @@ CustomStyles.buttonBook = styled.button.attrs({
   font-family: var(--poppins);
   font-weight: 600;
   font-size: 1rem;
-  background-color: var(--contrast-1-light);
-  border: 2px solid var(--contrast-1);
+  background-color: transparent;
+  border: 2px solid var(--primary-white);
   cursor: pointer;
   text-align: center;
   border-radius: 5px;
   transition: 0.3s all;
 
   &:hover {
-    border: 2px solid var(--gray-nurse);
-    background-color: transparent;
+    border: 2px solid var(--color-room-1);
+    background-color: var(--color-room-1);
     color: var(--gray-nurse);
   }
 `;

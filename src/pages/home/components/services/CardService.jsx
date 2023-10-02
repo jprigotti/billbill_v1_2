@@ -1,7 +1,7 @@
 import React from "react";
 import "./Services.css";
-import { FaWifi, FaSnowflake, FaConciergeBell, FaUmbrellaBeach, FaLaptopHouse, FaThermometerFull, FaLock } from "react-icons/fa";
-import { MdSignalWifi2Bar, MdLaptopChromebook } from 'react-icons/md';
+import { FaWifi, FaSnowflake, FaConciergeBell, FaUmbrellaBeach, FaLaptopHouse, FaThermometerFull, FaLock, FaBookReader } from "react-icons/fa";
+import { MdSignalWifi2Bar, MdLaptopChromebook, MdTv, MdKitchen, MdLocalBar } from 'react-icons/md';
 
 
 
@@ -17,6 +17,10 @@ const CardService = ({ iconComponent, text }) => {
         lock: FaLock,
         wifiSignal: MdSignalWifi2Bar,
         laptopChromebook: MdLaptopChromebook,
+        cocina: MdKitchen ,
+        lectura: FaBookReader,
+        tv: MdTv,
+        bar: MdLocalBar,
     };
 
     const IconComponent = iconMapping[iconComponent];

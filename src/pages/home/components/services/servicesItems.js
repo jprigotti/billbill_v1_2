@@ -1,13 +1,5 @@
 export const servicesItems = [
   {
-    name: "Free WiFi",
-    icon: "wifi"
-  },
-  {
-    name: "A/C",
-    icon: "snowflake"
-  },
-  {
     name: "Recepcion 24x7",
     icon: "bell"
   },
@@ -20,13 +12,38 @@ export const servicesItems = [
     icon: "laptop"
   },
   {
+    name: "Cocina equipada",
+    icon: "cocina"
+  },
+  {
+    name: "Sala de lectura",
+    icon: "lectura"
+  },
+  {
+    name: "Sala de TV",
+    icon: "tv"
+  },
+  {
+    name: "Free WiFi",
+    icon: "wifi"
+  },
+  {
+    name: "A/C",
+    icon: "snowflake"
+  },
+  {
     name: "Calefacción",
     icon: "thermometer"
   },
   {
+    name: "Bar",
+    icon: "bar"
+  },
+  {
     name: "Lockers",
     icon: "lock"
-  }
+  },
+
 ]
 
 

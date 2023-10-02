@@ -59,7 +59,8 @@ const Gallery = () => {
               }}>
               <img
                 className=""
-                src={image.imageUrl} />
+                src={image.imageUrl} 
+                loading="lazy"/>
             </SwiperSlide>
           )
         })}
