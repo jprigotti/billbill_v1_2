@@ -1,0 +1,1 @@
+export { default as BookingCloudBeds} from "./bookingCloudBeds/BookingCloudBeds";
