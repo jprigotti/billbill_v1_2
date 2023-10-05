@@ -87,3 +87,7 @@
 .rooms-card-footer p{
 font-family: var(--poppins);
 }
+
+.link {
+  text-decoration: none !important ; 
+}

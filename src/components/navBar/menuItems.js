@@ -1,18 +1,18 @@
 export const menuItems = [
     {
       name: "Inicio",
-      tag: "#section-hero"
+      tag: "/#section-hero"
     },
     {
       name: "Habitaciones",
-      tag: "#section-rooms"
+      tag: "/#section-rooms"
     },
     {
       name: "Contacto",
-      tag: "#section-contact"
+      tag: "/#section-contact"
     },
     {
       name: "Ubicación",
-      tag: "#section-location"
+      tag: "/#section-location"
     }
   ]
