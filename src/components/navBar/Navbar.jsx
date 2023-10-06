@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from "react-router-dom";
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import billbillLogo from './../../assets/billbill_logo_png.png';
 import "../../../src/components/navBar/navbar.css";
-import { menuItems } from "../../../src/components/navBar/menuItems.js";
+import { menuItems } from "../../../src/components/navBar/menuItems";
 import { TfiLocationPin } from "react-icons/tfi";
 import { TfiHeadphoneAlt } from "react-icons/tfi";
 import "../../utils/global.css"
@@ -21,9 +22,6 @@ const Navbar = () => {
   const SCROLL_BREAK = 1000;
   const LOGO_SIZE = 80;
   const BILL_SIZE = 20;
-  // useEffect(() => {
-  //   setToggleMenu(true);
-  // }, [])
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -72,7 +70,9 @@ const Navbar = () => {
 
         <div className="navbar-content">
           <div className="navbar-links-container">
+          {/* <p ><Link to="/booking">Test</Link></p> */}
             {menuItems.map((item, index) => {
+              // return (<p key={index}><Link to={item.tag}>Test</Link></p>);
               return (<p key={index}><a className="mx-2 underline-effect" href={item.tag}>{item.name}</a></p>)
             })}
           </div>
@@ -91,13 +91,13 @@ const Navbar = () => {
 
 
 
-      <div className={toggleMenu ? 'gpt3__navbar-menu_container show-menu' : 'gpt3__navbar-menu_container  hide-menu'}>
+      {/* <div className={toggleMenu ? 'gpt3__navbar-menu_container show-menu' : 'gpt3__navbar-menu_container  hide-menu'}>
         <div className="gpt3__navbar-menu_container-links">
           {menuItems.map((item, index) => {
             return (<button className="mx-2 mb-2 btn-item" key={index} onClick={() => handleClick(item.tag)}>{item.name}</button>)
           })}
         </div>
-      </div>
+      </div> */}
 
     </div>
   );

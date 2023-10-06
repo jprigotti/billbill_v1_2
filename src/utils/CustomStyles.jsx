@@ -159,7 +159,7 @@ CustomStyles.buttonSend = styled.button.attrs({
   }
 `;
 
-CustomStyles.buttonBook = styled.button.attrs({
+CustomStyles.buttonBook = styled.p.attrs({
   //   className: "btn btn-success btn-sm"
 })`
   /* Your custom styles */

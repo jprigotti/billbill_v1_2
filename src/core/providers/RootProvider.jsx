@@ -8,8 +8,6 @@ const RootProvider = ({ children }) => {
       <GeneralLayout>
         {children}
       </GeneralLayout>
-
-
     </HelmetProvider>
   );
 };
