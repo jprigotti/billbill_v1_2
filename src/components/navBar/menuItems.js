@@ -17,6 +17,6 @@ export const menuItems = [
     },
     {
       name: "Reservar",
-      tag: "/booking"
+      tag: "booking"
     },
   ]
