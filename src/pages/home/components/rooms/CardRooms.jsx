@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom"
+import { Link, Navigate } from "react-router-dom"
 import "./Rooms.css";
 import CustomStyles from "../../../../utils/CustomStyles";
 
@@ -7,6 +7,10 @@ const CardRooms = ({ id, image, category, type, bathroom, color1, color2 }) => {
 
   const handleBook = () => {
     route
+  }
+
+  const navigateTo = () => {
+    <navigate to="/booking" replace={true} />
   }
 
   const abrirWhatsApp = () => {
@@ -30,18 +34,15 @@ const CardRooms = ({ id, image, category, type, bathroom, color1, color2 }) => {
           <p className="mb-2">{category}</p>
           <p className="mb-2">{type}</p>
           <p className="mb-2">{bathroom}</p>
-          <p><Link className="link" to="/booking">Reservar
-            {/* <CustomStyles.buttonBook onClick={abrirWhatsApp}>Reservar</CustomStyles.buttonBook> */}
-          </Link>
-          </p>
+          {/* <Link className="link" to="/booking">Reservar</Link> */}
+          {/* <CustomStyles.buttonBook onClick={navigateTo}>Reservar</CustomStyles.buttonBook> */}
         </div>
       </div>
 
       <div className="rooms-card-footer"
         style={{ background: `linear-gradient(to bottom, ${color1}, ${color2})` }}>
         <div>
-          {/* <p>{category}</p>
-          <p className="mb-1">{type}</p> */}
+          <Link className="link" to="/booking">Reservar</Link>
           <div className="rooms-card-body-footer">
 
           </div>

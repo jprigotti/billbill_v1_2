@@ -14,5 +14,9 @@ export const menuItems = [
     {
       name: "Ubicación",
       tag: "#section-location"
-    }
+    },
+    {
+      name: "Reservar",
+      tag: "/booking"
+    },
   ]

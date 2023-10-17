@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import billbillLogo from './../../assets/billbill_logo_png.png';
 import "../../../src/components/navBar/navbar.css";
@@ -14,6 +14,7 @@ import {
 } from "react-icons/fa";
 
 const Navbar = () => {
+  const navigate = useNavigate();
   const [toggleMenu, setToggleMenu] = useState(true);
   const [alpha, setAlpha] = useState(0.3);
   const [logoSize, setLogoSize] = useState(60);
@@ -44,11 +45,16 @@ const Navbar = () => {
   }, []);
 
   const handleClick = (anchor) => {
-    const element = document.querySelector(anchor);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+    if (anchor.includes("#")){
+      const element = document.querySelector(anchor);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+      setToggleMenu(!toggleMenu);
+    }else{
+      navigate(anchor);
     }
-    setToggleMenu(!toggleMenu);
+
   };
 
 
