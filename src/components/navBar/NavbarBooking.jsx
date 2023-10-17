@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import billbillLogo from './../../assets/billbill_logo_png.png';
 import "../../../src/components/navBar/navbar.css";
-import { menuItems } from "../../../src/components/navBar/menuItems";
+import { menuItems } from "./menuItems";
 import { TfiLocationPin } from "react-icons/tfi";
 import { TfiHeadphoneAlt } from "react-icons/tfi";
 import "../../utils/global.css"
@@ -51,7 +51,6 @@ const Navbar = () => {
     setToggleMenu(!toggleMenu);
   };
 
-
   return (
     <div className={toggleMenu ? 'navbar' : 'navbar navbar-100vh'}
       style={{
@@ -64,7 +63,7 @@ const Navbar = () => {
               width: `${LOGO_SIZE * logoSize}px`,
               height: `${LOGO_SIZE * logoSize}px`
             }}
-            src={billbillLogo}/>
+            src={billbillLogo} />
           <p style={{ fontSize: `${BILL_SIZE * (1 - logoSize)}px`, }}>
             Bill<span style={{ fontSize: `${BILL_SIZE * (1 - logoSize)}px`, color: "var(--jungle-green)" }}>&</span>Bill
           </p>
@@ -72,9 +71,10 @@ const Navbar = () => {
 
         <div className="navbar-content">
           <div className="navbar-links-container">
-            {menuItems.map((item, index) => {
+            <p ><Link to="/">Volver</Link></p>
+            {/* {menuItems.map((item, index) => {
               return (<p key={index}><a className="mx-2 underline-effect" href={item.tag}>{item.name}</a></p>)
-            })}
+            })} */}
           </div>
         </div>
         <div className="navbar-info">
@@ -93,9 +93,10 @@ const Navbar = () => {
 
       <div className={toggleMenu ? 'gpt3__navbar-menu_container show-menu' : 'gpt3__navbar-menu_container  hide-menu'}>
         <div className="gpt3__navbar-menu_container-links">
-          {menuItems.map((item, index) => {
+        <Link className="btn-item" to="/">Volver</Link>
+          {/* {menuItems.map((item, index) => {
             return (<button className="mx-2 mb-2 btn-item" key={index} onClick={() => handleClick(item.tag)}>{item.name}</button>)
-          })}
+          })} */}
         </div>
       </div>
 

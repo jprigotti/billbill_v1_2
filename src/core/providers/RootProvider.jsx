@@ -1,13 +1,13 @@
 import React from "react";
 import { HelmetProvider } from "react-helmet-async";
-import GeneralLayout from "../layouts/GeneralLayout";
+import GeneralLayout from "../layouts/BookingLayout";
 
 const RootProvider = ({ children }) => {
   return (
     <HelmetProvider>
-      <GeneralLayout>
+      {/* <GeneralLayout> */}
         {children}
-      </GeneralLayout>
+      {/* </GeneralLayout> */}
     </HelmetProvider>
   );
 };

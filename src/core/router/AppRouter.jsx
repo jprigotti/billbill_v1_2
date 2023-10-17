@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import HomeView from "../../pages/home/views/HomeView"
 import BookingView from "../../pages/booking/views/BookingView"
 import GeneralLayout from "../layouts/GeneralLayout";
+import BookingLayout from "../layouts/BookingLayout";
 
 export const appRouter = createBrowserRouter([
     {
@@ -16,9 +17,9 @@ export const appRouter = createBrowserRouter([
     {
         path: "/booking",
         element: (
-            <GeneralLayout>
+            <BookingLayout>
                 <BookingView />
-            </GeneralLayout>
+            </BookingLayout>
         ),
     },
 ]);

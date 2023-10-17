@@ -114,6 +114,7 @@
 .btn-item{
     background: none;
     background-color: transparent;
+    color: var(--heavy-black) !important;
     border: none;
     outline: none;
     cursor: pointer;

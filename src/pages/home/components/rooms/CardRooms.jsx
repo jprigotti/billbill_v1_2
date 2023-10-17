@@ -30,9 +30,8 @@ const CardRooms = ({ id, image, category, type, bathroom, color1, color2 }) => {
           <p className="mb-2">{category}</p>
           <p className="mb-2">{type}</p>
           <p className="mb-2">{bathroom}</p>
-          <p><Link className="link" to="/booking">
+          <p><Link className="link" to="/booking">Reservar
             {/* <CustomStyles.buttonBook onClick={abrirWhatsApp}>Reservar</CustomStyles.buttonBook> */}
-            <CustomStyles.buttonBook>Reservar</CustomStyles.buttonBook>
           </Link>
           </p>
         </div>
