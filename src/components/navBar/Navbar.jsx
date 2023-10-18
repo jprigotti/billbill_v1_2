@@ -54,7 +54,17 @@ const Navbar = () => {
     }else{
       navigate(anchor);
     }
+  };
 
+  const handleClickDesktop = (anchor) => {
+    if (anchor.includes("#")){
+      const element = document.querySelector(anchor);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }else{
+      navigate(anchor);
+    }
   };
 
 
@@ -79,7 +89,8 @@ const Navbar = () => {
         <div className="navbar-content">
           <div className="navbar-links-container">
             {menuItems.map((item, index) => {
-              return (<p key={index}><a className="mx-2 underline-effect" href={item.tag}>{item.name}</a></p>)
+              // return (<p key={index}><a className="mx-2 underline-effect" href={item.tag}>{item.name}</a></p>)
+              return (<p key={index}><a className="mx-2 underline-effect" onClick={() => handleClickDesktop(item.tag)}>{item.name}</a></p>)
             })}
           </div>
         </div>
