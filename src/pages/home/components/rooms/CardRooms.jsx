@@ -42,7 +42,7 @@ const CardRooms = ({ id, image, category, type, bathroom, color1, color2 }) => {
       <div className="rooms-card-footer"
         style={{ background: `linear-gradient(to bottom, ${color1}, ${color2})` }}>
         <div>
-          <Link className="link" to="/booking">Reservar</Link>
+          <Link to="booking" className="link" >Reservar</Link>
           <div className="rooms-card-body-footer">
 
           </div>

@@ -45,34 +45,37 @@ const Navbar = () => {
   }, []);
 
   const handleClick = (anchor) => {
-    if (anchor.includes("#")){
+    if (anchor.includes("#")) {
       const element = document.querySelector(anchor);
       if (element) {
         element.scrollIntoView({ behavior: 'smooth' });
       }
       setToggleMenu(!toggleMenu);
-    }else{
+    } else {
       navigate(anchor);
     }
   };
 
   const handleClickDesktop = (anchor) => {
-    if (anchor.includes("#")){
+    if (anchor.includes("#")) {
       const element = document.querySelector(anchor);
       if (element) {
         element.scrollIntoView({ behavior: 'smooth' });
       }
-    }else{
+    } else {
       navigate(anchor);
     }
   };
 
 
   return (
+
+
     <div className={toggleMenu ? 'navbar' : 'navbar navbar-100vh'}
       style={{
         backgroundImage: `linear-gradient(to bottom, rgba(255, 255, 255, ${alpha}), rgba(255,255,255, ${alpha}))`
       }}>
+
       <div className="main-container navbar-container">
         <div className="navbar-logo mx-2">
           <img
@@ -80,7 +83,7 @@ const Navbar = () => {
               width: `${LOGO_SIZE * logoSize}px`,
               height: `${LOGO_SIZE * logoSize}px`
             }}
-            src={billbillLogo}/>
+            src={billbillLogo} />
           <p style={{ fontSize: `${BILL_SIZE * (1 - logoSize)}px`, }}>
             Bill<span style={{ fontSize: `${BILL_SIZE * (1 - logoSize)}px`, color: "var(--jungle-green)" }}>&</span>Bill
           </p>
@@ -117,6 +120,8 @@ const Navbar = () => {
       </div>
 
     </div>
+
+
   );
 };
 

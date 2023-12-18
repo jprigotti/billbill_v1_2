@@ -71,7 +71,7 @@ const Navbar = () => {
 
         <div className="navbar-content">
           <div className="navbar-links-container">
-            <p ><Link to="/">Volver</Link></p>
+            <p><Link to="/">Volver</Link></p>
             {/* {menuItems.map((item, index) => {
               return (<p key={index}><a className="mx-2 underline-effect" href={item.tag}>{item.name}</a></p>)
             })} */}
