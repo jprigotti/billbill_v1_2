@@ -6,7 +6,7 @@ import "../../../../utils/global.css"
 import { FaFacebook, FaInstagram, FaWhatsapp } from 'react-icons/fa';
 const urlFetch = "https://script.google.com/macros/s/AKfycbw_QHPSAxQATM25EatTGmkglDZFVSJUkitHfV4UMaVnTM3nIwqjwBpt6K8l7tWi8UMf/exec";
 const urlFetchDailu = "https://script.google.com/macros/s/AKfycbyKxrp0TOhXXRHhdt0_YRFeJKdMA2ei3242YwtFT5Kzlcdy4QIGbS39AzY15e9RQGut/exec";
-// link google script Dailu https://script.google.com/u/1/home/projects/1I0vZLBKK4JgAeRdTIV2zrlX1S20Lsr8n8UrfLIG4kKTgqIBM5IKif5MN/edit
+const urlFetchBillBill = "https://script.google.com/macros/s/AKfycbxqt7n5uHw8MaGHwyA-pTU8qep3MIvkZwShXY1D8tpnZiA3FQigRlZIGxRibtjeoYTU_Q/exec";
 
 
 const Contact = () => {
@@ -26,7 +26,7 @@ const Contact = () => {
       message: message
     }
 
-    fetch(urlFetchDailu, {
+    fetch(urlFetchBillBill, {
       method: 'POST',
       redirect: "follow",
       dataType: 'json',

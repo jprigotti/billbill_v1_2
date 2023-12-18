@@ -15,6 +15,7 @@ export const content = [
     }
 ]
 
+
 // export const content = [
 //     {
 //         paragraph: "Bill&Bill Hostel se encuentra estratégicamente ubicado en el histórico barrio de San Telmo. Nuestro acogedor hostal te ofrece una experiencia inigualable en el corazón turístico de la ciudad de Buenos Aires.",
