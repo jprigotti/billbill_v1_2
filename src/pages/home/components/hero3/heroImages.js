@@ -1,15 +1,11 @@
-// import image1 from "../../../../assets/images/hero_selection/hostel_frente_16_9.jpg"
-import image1 from "../../../../assets/images/hero_selection/hostel_frente_16_9_c.jpg"
-import image4 from "../../../../assets/images/hero_selection/hostel_frente_progressive.jpg"
+import image1 from "../../../../assets/images/hero_selection/hostel_frente_v_2.jpg"
 import image2 from "../../../../assets/images/hero_selection/bed_towels.jpg"
 import image3 from "../../../../assets/images/hero_selection/hostel_frente_4_3.jpg"
-// import image4 from "../../../../assets/images/hero_selection/hostel_frente_jp_16_9.jpg"
-
 
 
 export const images16x9 = [
     {
-        imageURL: image4,
+        imageURL: image1,
         imageText: "Estamos en el corazón de San Telmo - Buenos Aires"
     },
     {
